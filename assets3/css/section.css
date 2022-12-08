@@ -173,7 +173,7 @@
 .section2__bottom {
     position: absolute;
     left: 0;
-    bottom: 10vw;
+    bottom: 2vw;
     z-index: 40;
 }
 
@@ -672,11 +672,38 @@
     padding: 3vw;
     background: #FEBF60;
 
+
+}
+
+.section5__box .section5__box__top2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5vw;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section5__box .section5__box__top2:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
 }
 
 .img__inner__box2 {
     border: 0.4vw solid #000;
     border-radius: 100%;
+    position: relative;
+    z-index: 3;
 }
 
 .section5__box .section5-2__click {
@@ -712,6 +739,37 @@
 .section5__box .section5__box__top3 {
     padding: 3vw;
     background: #60A6FE;
+}
+
+.section5__box .section5__box__top3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5vw;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section5__box .section5__box__top3:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
+.section5__box .img__inner__box3 {
+    border: 0.4vw solid #000;
+    border-radius: 100%;
+    position: relative;
+    z-index: 3;
 
 }
 
@@ -1017,6 +1075,32 @@
 .section6__box .section6__box__top1 {
     padding: 3vw;
     background: #60A6FE;
+    position: relative;
+    overflow: hidden;
+}
+
+.section6__box .section6__box__top1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section6__box .section6__box__top1:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
 }
 
 .section6__box .section6-1__click {
@@ -1024,7 +1108,7 @@
     right: 0;
     bottom: 10vw;
     padding: 2vw;
-    z-index: 20;
+    z-index: 50;
 }
 
 .section6__box .section6-1__click img {
@@ -1054,7 +1138,32 @@
 .section6__box .section6__box__top2 {
     padding: 3vw;
     background: #FEBF60;
+    overflow: hidden;
+    position: relative;
+}
 
+.section6__box .section6__box__top2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section6__box .section6__box__top2:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
 }
 
 .section6__box .section6-2__click {
@@ -1355,14 +1464,41 @@
 .section7__box .section7__box__top1 {
     padding: 3vw;
     background: #8060FE;
+    position: relative;
+    overflow: hidden;
 }
+
+.section7__box .section7__box__top1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box .section7__box__top1:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
 
 .section7__box .section7-1__click {
     position: absolute;
     right: 0;
     bottom: 25vw;
     padding: 2vw;
-    z-index: 20;
+    z-index: 50;
     transform: rotate(-75deg);
 }
 
@@ -1395,7 +1531,34 @@
 .section7__box .section7__box__top2 {
     padding: 3vw;
     background: #FEBF60;
+    position: relative;
+    overflow: hidden;
 }
+
+.section7__box .section7__box__top2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box .section7__box__top2:hover:before {
+    opacity: 1;
+    scale: 2;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
 
 .section7__box .section7-2__click {
     position: absolute;
@@ -1408,6 +1571,7 @@
 
 .section7__box .section7-2__click img {
     width: 5vw;
+    z-index: 50;
 }
 
 .section7__box .section7-2__click .section7-2__touch {
@@ -1433,7 +1597,39 @@
 .section7__box .section7__box__top3 {
     padding: 3vw;
     background: #60A6FE;
+    position: relative;
+    overflow: hidden;
+}
 
+.section7__box .section7__box__top3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box .section7__box__top3:hover:before {
+    opacity: 1;
+    scale: 2;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
+.section7__box .img__inner__box3 {
+    border: 0.4vw solid #000;
+    border-radius: 100%;
+    position: relative;
+    z-index: 50;
 }
 
 .section7__box .section7-3__click {
@@ -1441,12 +1637,13 @@
     right: 15;
     bottom: 25vw;
     padding: 2vw;
-    z-index: 20;
+    z-index: 70;
     transform: rotate(145deg);
 }
 
 .section7__box .section7-3__click img {
     width: 5vw;
+
 }
 
 .section7__box .section7-3__click .section7-3__touch {
@@ -1466,7 +1663,7 @@
     position: absolute;
     left: 0;
     top: 40vw;
-    z-index: 20;
+    z-index: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1536,7 +1733,7 @@
         right: 6vw;
         bottom: 20vw;
         padding: 3vw;
-        z-index: 20;
+        z-index: 50;
         transform: rotate(25deg);
     }
 
@@ -1629,7 +1826,7 @@
         right: 35vw;
         bottom: 45vw;
         padding: 3vw;
-        z-index: 20;
+        z-index: 60;
         transform: rotate(145deg);
     }
 
@@ -1735,6 +1932,33 @@
 .section8__box .section8__box__top1 {
     padding: 3vw;
     background: #FEBF60;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.section8__box .section8__box__top1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section8__box .section8__box__top1:hover:before {
+    opacity: 1;
+    scale: 2;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
 }
 
 .section8__box .section8-1__click {
@@ -1742,12 +1966,13 @@
     right: 15vw;
     bottom: 25vw;
     padding: 2vw;
-    z-index: 20;
+    z-index: 50;
     transform: rotate(145deg);
 }
 
 .section8__box .section8-1__click img {
     width: 5vw;
+    z-index: 30;
 }
 
 .section8__box .section8-1__click .section8-1__touch {
@@ -1775,7 +2000,32 @@
 .section8__box .section8__box__top2 {
     padding: 3vw;
     background: #8060FE;
+    position: relative;
+    overflow: hidden;
+}
 
+.section8__box .section8__box__top2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section8__box .section8__box__top2:hover:before {
+    opacity: 1;
+    scale: 2;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
 }
 
 .img__inner__box2 {
@@ -1901,7 +2151,7 @@
         right: 35vw;
         bottom: 35vw;
         padding: 3vw;
-        z-index: 20;
+        z-index: 40;
         transform: rotate(145deg);
     }
 
