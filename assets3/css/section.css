@@ -393,7 +393,7 @@
         display: block;
     }
 
-    .section3__box__inner .section3__left__box {
+    .section3__box__inner #section3__left__box {
         width: 96vw !important;
         margin-bottom: 3vw;
     }
