@@ -1,0 +1,119 @@
+#section3 {
+    width: 96vw;
+    height: 200vh;
+    margin: 1vw 2vw;
+    display: grid;
+    grid-template-areas:
+        "section3__box1 section3__box2"
+        "section3__box1 section3__box3"
+    ;
+    grid-template-columns: 47.5vw 47.5vw;
+    grid-template-rows: 9.17vw 27.084vw;
+    grid-gap: 1vw;
+}
+
+.section3__box1 {
+    grid-area: section3__box1;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    background-image: url(../img/section3bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section3__box1 .section3__myphoto {
+    background-image: url(../img/myphoto2-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 28vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section3__box1 .section3__button {
+    position: absolute;
+    padding: 1.5vw 5vw;
+    font-size: 4vw;
+    background: #FFEB26;
+    display: inline-block;
+    right: 3vw;
+    bottom: 2vw;
+    border-radius: 1vw;
+    border: 0.4vw solid #000;
+    text-shadow: 0.2vw 0.2vw #fff;
+    box-shadow: 0.4vw 0.4vw #000;
+}
+
+.section3__box2 {
+    grid-area: section3__box2;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    padding: 1vw;
+    border: 0.4vw solid #000;
+    background: #FFEB26;
+    font-size: 4vw;
+    text-align: center;
+    border-radius: 1vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+}
+
+.section3__box2 .section3__box2__button {
+    font-size: 4vw;
+    text-align: center;
+    border-radius: 1vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+
+}
+
+.section3__box3 {
+    grid-area: section3__box3;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    background-image: url(../img/section3bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section3__box3 .section__right__img1 {
+    background-image: url(../img/FINGGER-min.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10vw 15vw;
+    position: absolute;
+    left: 0vw;
+    top: 1vw;
+    transform: rotate(30deg);
+    z-index: 10;
+}
+
+.section3__box3 .section__right__img2 {
+    background-image: url(../img/flag-min.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10vw;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+}
+
+.section3__box3 .section__right__img3 {
+    background-image: url(../img/10_Hand.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10vw;
+    position: absolute;
+    right: 0;
+    top: 9vw;
+}
