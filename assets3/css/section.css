@@ -297,7 +297,7 @@
     border: 0.4vw solid #000;
     box-shadow: 0.5vw 0.5vw #000;
     text-shadow: 0.2vw 0.2vw #fff;
-
+    z-index: 20;
 }
 
 .section3__left__button:hover {}
@@ -2619,11 +2619,11 @@
     border: 0.4vw solid #000;
     border-radius: 50%;
     background: #FFF271;
-    transition: all 0.5s;
+    transition: all 0.25s cubic-bezier(0.23, 0.43, 0.38, 1.95)
 }
 
 .section__button1:hover {
-    box-shadow: 0.5vw 0.5vw #000;
+    box-shadow: 0.2vw 0.2vw #000;
     scale: 1.1;
 }
 
@@ -2677,11 +2677,11 @@
     border: 0.4vw solid #000;
     border-radius: 50%;
     background: #C58AF3;
-    transition: all 0.5s;
+    transition: transform .25s cubic-bezier(.3, .7, .4, 1.5), -webkit-transform .25s cubic-bezier(.3, .7, .4, 1.5);
 }
 
 .section__button2:hover {
-    box-shadow: 0.5vw 0.5vw #000;
+    box-shadow: 2px 2px #000;
     scale: 1.1;
 }
 
@@ -2725,7 +2725,7 @@
     border: 0.4vw solid #000;
     border-radius: 50%;
     background: #FF9CDD;
-    transition: all 0.5s;
+    transition: all 0.5s cubic-bezier(0, 1.63, 0.57, 0.35);
 }
 
 .section__button3:hover {
@@ -2774,7 +2774,8 @@
     border: 0.4vw solid #000;
     border-radius: 50%;
     background: #52C6FF;
-    transition: all 0.5s;
+
+    transition: all 0.25s ease-out;
 }
 
 .section__button4:hover {
@@ -2822,7 +2823,7 @@
     border: 0.4vw solid #000;
     border-radius: 50%;
     background: #FE490B;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
 }
 
 .section__button5:hover {

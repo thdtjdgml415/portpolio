@@ -917,9 +917,9 @@
             end: "top 20%",
             scrub: 2.5,
                 markers: {
-                    startColor: "blue",
-                    endColor: "pink",
-                    fontsize: "30px",
+                    // startColor: "blue",
+                    // endColor: "pink",
+                    // fontsize: "30px",
                 },
             },
         });
@@ -1023,6 +1023,25 @@
                 i = 0
             }
         }, 500)
+
+        const section3button = document.querySelector(".section3__left__button")
+
+        gsap.from(".section3__left__button", {
+        opacity: 0,
+        y: 0,
+        duration: 3
+        });
+
+        const section3leftbutton = gsap.to(".section3__left__button", {
+        scaleX:1.5 , scaleY:1.5, scaleZ:1.5,
+        duration:0.1,
+        paused: true,
+        ease: "ease-in-out"
+        });
+
+        section3button.addEventListener("mouseenter", ()=> section3leftbutton.play())
+        section3button.addEventListener("mouseleave", ()=> section3leftbutton.reverse())
+     
       </script>
       <script>
         // section5
@@ -1038,9 +1057,9 @@
             scrub: 2.5,
             duration: 0.1,
                 markers: {
-                    startColor: "blue",
-                    endColor: "pink",
-                    fontsize: "30px",
+                    // startColor: "blue",
+                    // endColor: "pink",
+                    // fontsize: "30px",
                 },
             },
         });
@@ -1060,9 +1079,9 @@
             end: "bottom 0%",
             scrub: 2,
                 markers: {
-                    startColor: "blue",
-                    endColor: "pink",
-                    fontsize: "30px",
+                    // startColor: "blue",
+                    // endColor: "pink",
+                    // fontsize: "30px",
                 },
             },
         });
@@ -1081,9 +1100,9 @@
             end: "bottom 0%",
             scrub: 3,
                 markers: {
-                    startColor: "blue",
-                    endColor: "pink",
-                    fontsize: "30px",
+                    // startColor: "blue",
+                    // endColor: "pink",
+                    // fontsize: "30px",
                 },
             },
         });
@@ -1101,9 +1120,9 @@
                 end: "bottom 0%",
                 scrub: 3,
                     markers: {
-                        startColor: "blue",
-                        endColor: "pink",
-                        fontsize: "30px",
+                        // startColor: "blue",
+                        // endColor: "pink",
+                        // fontsize: "30px",
                     },
                 },
             });
@@ -1118,18 +1137,56 @@
             });
 
             const button = gsap.to(".search__button", {
-                scaleX:1.5 , scaleY:1.5, scaleZ:1.5,
+                scaleX:1.1 , scaleY:1.1, scaleZ:1.0,
                 duration:0.1,
                 paused: true,
-                ease: "ease-in-out"
             });
             
             search.addEventListener("mouseenter", ()=> button.play())
             search.addEventListener("mouseleave", ()=> button.reverse())
           </script>
 
-              <script>
+          <script>
+            // section14               
+            gsap.to(".left__about", {
+              
+            x: 0,
+            y: 0,
+            duration: 0.1,
+            scrollTrigger: {
+                trigger: ".left__about",
+                start: "top 0%",
+                end: "+=400",
+                pin: true,
+                scrub: 3,
+                    markers: {
+                        // startColor: "blue",
+                        // endColor: "pink",
+                        // fontsize: "30px",
+                    },
+                },
+            });
+            gsap.to(".left__study", {
+              
+              x: 0,
+              y: 0,
+              duration: 0.1,
+              scrollTrigger: {
+                  trigger: ".left__study",
+                  start: "top 0%",
+                  end: "+=1100",
+                  pin: true,
+                  scrub: 3,
+                      markers: {
+                          // startColor: "blue",
+                          // endColor: "pink",
+                          // fontsize: "30px",
+                      },
+                  },
+              });
 
-              </script>
+          
+            
+          </script>
   </body>
 </html>
