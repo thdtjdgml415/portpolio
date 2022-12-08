@@ -913,13 +913,9 @@
         y: -400,
         scrollTrigger: {
             trigger: ".section3__box__inner",
-            start: "top 50%",
+            // start: "top 50%",
             scrub: 2.5,
-                // markers: {
-                //     // startColor: "blue",
-                //     // endColor: "pink",
-                //     // fontsize: "30px",
-                // },
+                // markers: true
             },
         });
 
@@ -1041,70 +1037,6 @@
         section3button.addEventListener("mouseenter", ()=> section3leftbutton.play())
         section3button.addEventListener("mouseleave", ()=> section3leftbutton.reverse())
        
-       
-        let t3 = gsap.timeline()
-
-        t3.from(".section3__img1", {
-          x:0,
-          y:0,
-          scale: 0,
-          scrollTrigger: {
-            trigger:".section3__right__top",
-            start: "top 50%",
-            end: "bottom 0%",
-               markers: {
-                    // startColor: "blue",
-                    // endColor: "pink",
-                    // fontsize: "30px",
-                },
-          }
-        })
-        
-        
-        t3.to(".section3__img1", {
-          x:0,
-          y:0,
-          scale: 1.1,
-          duration: .3,
-     
-        })
-
-        t3.from(".section3__img2", {
-          x:0,
-          y:0,
-          scale: 0,
-    
-        })
-       
-        t3.to(".section3__img2", {
-          x:100,
-          y:100,
-          duration: .3,
-    
-        })
-        // gsap.set(".section3__img1", {scale:0})
-
-        // gsap.to(".section3__img1", {
-        //   x:0,
-        //   y:0,
-        //   scale: 1.1,
-        //   scrollTrigger: {
-        //     trigger:".section3__right__top",
-        //     start: "top 0%",
-        //     end: "bottom 0%"
-        //   }
-        // })
-        
-        // gsap.set(".section2__img2",{x:0,y:0})
-
-        // gsap.to(".section3__img2", {
-        //   x:100,
-        //   y:100,
-        //   duration: .3,
-        //   scrollTrigger: ".section3__right__top",
-        //   start: "top 0%",
-        //   end: "bottom 0%"
-        // })
       </script>
       <script>
         // section5
@@ -1115,14 +1047,10 @@
         y: -100,
         scrollTrigger: {
             trigger: ".section5__wrap",
-            start: "top 100%",
-            end: "bottom 0%",
+            // start: "top 100%",
+            // end: "bottom 0%",
             scrub: 2.5,
-                markers: {
-                    // startColor: "blue",
-                    // endColor: "pink",
-                    // fontsize: "30px",
-                },
+                // markers: true,
             },
         });
         let t5 = gsap.timeline()
@@ -1136,15 +1064,11 @@
         y: -100,
         duration: 0.1,
         scrollTrigger: {
-            trigger: ".section6__wrap",
-            start: "top 100%",
-            end: "bottom 0%",
-            scrub: 2,
-                markers: {
-                    // startColor: "blue",
-                    // endColor: "pink",
-                    // fontsize: "30px",
-                },
+              trigger: ".section6__wrap",
+              // start: "top 100%",
+              // end: "bottom 0%",
+              scrub: 2,
+              // markers: true,
             },
         });
       </script>
@@ -1158,8 +1082,8 @@
         duration: 0.1,
         scrollTrigger: {
             trigger: ".section7__wrap",
-            start: "top 100%",
-            end: "bottom 0%",
+            // start: "top 100%",
+            // end: "bottom 0%",
             scrub: 3,
                 markers: {
                     // startColor: "blue",
@@ -1178,8 +1102,8 @@
             y: -100,
             scrollTrigger: {
                 trigger: ".section8__wrap",
-                start: "top 100%",
-                end: "bottom 0%",
+                // start: "top 100%",
+                // end: "bottom 0%",
                 scrub: 3,
                     markers: {
                         // startColor: "blue",
@@ -1217,15 +1141,11 @@
             duration: 0.1,
             scrollTrigger: {
                 trigger: ".left__about",
-                start: "top 0%",
-                end: "+=400",
+                // start: "top 0%",
+                // end: "+=400",
                 pin: true,
                 scrub: 3,
-                    markers: {
-                        // startColor: "blue",
-                        // endColor: "pink",
-                        // fontsize: "30px",
-                    },
+                //markers: true,
                 },
             });
             gsap.to(".left__study", {
@@ -1235,20 +1155,13 @@
               duration: 0.1,
               scrollTrigger: {
                   trigger: ".left__study",
-                  start: "top 0%",
-                  end: "+=1100",
+                  // start: "top 0%",
+                  // end: "+=1100",
                   pin: true,
                   scrub: 3,
-                      markers: {
-                          // startColor: "blue",
-                          // endColor: "pink",
-                          // fontsize: "30px",
-                      },
+                  //markers: true,
                   },
-              });
-
-          
-            
+              }); 
           </script>
   </body>
 </html>
