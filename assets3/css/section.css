@@ -263,7 +263,7 @@
 
 
 
-.section3__box__inner .section3__left__box {
+.section3__box__inner #section3__left__box {
     width: 45.5vw;
     height: 40vw;
     border: 0.4vw solid #000;

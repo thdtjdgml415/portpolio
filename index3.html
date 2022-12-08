@@ -165,7 +165,7 @@
           <!-- section2 -->
           <section id="section3">
             <div class="section3__box__inner">
-              <div class="section3__left__box">
+              <div id="section3__left__box">
                 <div id="section3__left__img"></div>
                 <div class="section3__left__button">성희</div>
               </div>
@@ -1007,12 +1007,17 @@
             "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto2-min.png?raw=true",
             "https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto3-min.png?raw=true"   
         ]
+        let bgimage = [
+          "https://github.com/thdtjdgml415/portpolio/blob/master/assets3/img/section3bg3.png?raw=true",
+          "https://github.com/thdtjdgml415/portpolio/blob/master/assets3/img/section3bg.png?raw=true"
+        ]
         var coverDiv = document.getElementById('section3__left__img')
-        console.log(coverDiv)
+        let cover = document.getElementById('section3__left__box')
 
         var i = 0
         setInterval(() => {
             coverDiv.style.backgroundImage = 'url(' + images[i] + ')'
+            cover.style.backgroundImage = 'url(' + bgimage[i] + ')'
             i += 1
             if(i == images.length){
                 i = 0
