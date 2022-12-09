@@ -26,8 +26,6 @@
     left: 0;
     top: -3vw;
     z-index: 20;
-
-
 }
 
 .section2__box__inner .section2__desc__sub {
@@ -49,7 +47,7 @@
     height: 100%;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 60%;
 }
 
 .svg_bg svg {
