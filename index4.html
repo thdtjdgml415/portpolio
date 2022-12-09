@@ -173,7 +173,7 @@
                 <div class="banner1__bg">
                     <img src="./assets3/img/banner2-min.png" alt="" />
                 </div>    
-                <div class="banner1__desc">나의 작업물</div>
+                <div class="banner1__desc split2">나의 작업물</div>
                 <div class="banner1__desc__sub">
                     너무 잘했다고 놀라지 마시오! 놀람주의
                 </div>
@@ -181,6 +181,98 @@
                 </div>
             </section>
             <!-- section4 -->
+            <section id="section5">
+                <div class="section5__bg"></div>
+                <h2>쎠 미더 머니머니머니 기본코딩</h2>
+                <div class="section5__logo"></div>
+                <div class="section5__desc__sub">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
+                <div class="section5__wrap">
+                    <div class="section5__box1">
+                        <div class="section5-1__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section5-1__touch">클릭</p>
+                        </div>
+                        <div class="section5__box1__top">
+                            <div class="section5__box1__top__img"></div>
+                        </div>
+                        <div class="section5__box1__bottom">
+                            웹 표준을 준수해서 사이트 만들었습니다.
+                        </div>
+                    </div>
+                    <!-- box1 -->
+                    <div class="section5__box2">
+                        <div class="section5-2__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section5-2__touch">클릭</p>
+                        </div>
+                        <div class="section5__box2__top">
+                            <div class="section5__box2__top__img"></div>
+                        </div>
+                        <div class="section5__box2__bottom">
+                            반응형 사이트를 만들어 보았습니다.
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="section5__box3">
+                        <div class="section5-3__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section5-3__touch">클릭</p>
+                        </div>
+                        <div class="section5__box3__top">
+                            <div class="section5__box3__top__img"></div>
+                        </div>
+                        <div class="section5__box3__bottom">
+                            슬라이드, 탭메뉴를 만들어 적용하였습니다.
+                        </div>
+                    </div>
+                    <!-- box3 -->
+                </div>
+            </section>
+            <!-- section5 -->
+            <section id="section6">
+                <div class="section6__bg"></div>
+                <h2>쎠 미더 머니머니머니 PHP코딩</h2>
+                <div class="section6__logo"></div>
+                <div class="section6__desc__sub">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
+                <div class="section6__wrap">
+                    <div class="section6__box1">
+                        <div class="section6-1__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section6-1__touch">클릭</p>
+                        </div>
+                        <div class="section6__box1__top">
+                            <div class="section6__box1__top__img"></div>
+                        </div>
+                        <div class="section6__box1__bottom">
+                            이미지 다운로드 사이트를 만들어 보았습니다.
+                        </div>
+                    </div>
+                    <!-- box1 -->
+                    <div class="section6__box2">
+                        <div class="section6-2__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section6-2__touch">클릭</p>
+                        </div>
+                        <div class="section6__box2__top">
+                            <div class="section6__box2__top__img"></div>
+                        </div>
+                        <div class="section6__box2__bottom">
+                            php를 이용하여 사이트를 만들어보았습니다.
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="section6__box3">
+                        <div class="section6__box3__top">
+                            <div class="section6__box3__top__img"></div>
+                        </div>
+                        <div class="section6__box3__bottom">
+                            준비중
+                        </div>
+                    </div>
+                    <!-- box3 -->
+                </div>
+            </section>
+            <!-- section6 -->
 
 
             
@@ -195,8 +287,15 @@
             let splitTextWrap = text.innerText.split('').join('</span><span>');
             splitTextWrap = "<span>" + splitTextWrap + "</span>";
             text.innerHTML = splitTextWrap;
+
+            let text2 = document.querySelector('.split2');
+            let splitTextWrap2 = text2.innerText.split('').join('</span><span>');
+            splitTextWrap = "<span>" + splitTextWrap + "</span>";
+            text2.innerHTML = splitTextWrap2;
+
         </script>
     <script>
+         gsap.registerPlugin(ScrollTrigger);
         // main
         let t1 = gsap.timeline();
 
@@ -335,151 +434,278 @@
         </script>
 
         <script>
-        const windows = window.innerWidth   
+         gsap.registerPlugin(ScrollTrigger);
+ 
         // section3
-        gsap.set(".section3__box1",{width:"0", opacity:0})
+        gsap.set(".section3__box1",{x:-3000, opacity:0})
         gsap.set(".section3__box1 .section3__myphoto",{width:"0", height:"0"})
         gsap.set(".section3__box1 .section3__button",{opacity:0})
         
-        gsap.set(".section3__box2",{width:"0", opacity:0})
+        gsap.set(".section3__box2",{x:-3000, opacity:0})
         gsap.set(".section3__box2 .section3__box2__button",{opacity:0, y:200})
         
-        gsap.set(".section3__box3",{width:"0", opacity:0})
+        gsap.set(".section3__box3",{x:-3000, opacity:0})
         gsap.set(".section3__box3 .section__right__img1",{opacity:0, rotate: 0})
         gsap.set(".section3__box3 .section__right__img2",{opacity:0, rotate: -35})
         gsap.set(".section3__box3 .section__right__img3",{opacity:0, rotate: -35})
-            if(windows < 485) {
+            
+        // const windows = window.innerWidth   
+        // if(windows < 485) {
+        //         console.log(windows)
+        //     gsap.to(".section3__box1",{
+        //         width:"96vw",
+        //         duration:1, 
+        //         opacity:1,
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         },
+        //     })
 
-                gsap.to(".section3__box1",{
-                    width:"96vw",
-                    duration:1, 
-                    opacity:1,
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    },
-                })
-    
-                gsap.to(".section3__myphoto",{
-                    width:"20vw",
-                    height:"28vw",
-                    duration:1, 
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        markers: true 
-                    },
-                })
-    
-                gsap.to(".section3__box1 .section3__button",{
-                    opacity:1,
-                    duration:1,
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    },
-                })
-                gsap.to(".section3__box2",{
-                    width:"96vw",
-                    opacity:1,
-                    duration:1,
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        markers: false 
-                    }, 
-                })
-                gsap.to(".section3__box2 .section3__box2__button",{
-                    y:0,
-                    opacity:1,
-                    duration:2.5,
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    }, 
-                })
-                gsap.to(".section3__box3",{
-                    width:"96vw",
-                    opacity:1,
-                    duration:1, 
-                    duration:.5,
-                    ease: Bounce.easeOut,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    }, 
-                })
-                gsap.to(".section3__box3 .section__right__img1",{
-                    opacity:1,
-                    duration:1.5, 
-                    delay:.5,
-                    rotate: 35,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    }, 
-                })
-                gsap.to(".section3__box3 .section__right__img2",{
-                    opacity:1,
-                    duration:1.5, 
-                    delay:.5,
-                    rotate: 35,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    }, 
-                })
-                gsap.to(".section3__box3 .section__right__img3",{
-                    opacity:1,
-                    duration:1.5, 
-                    delay:.5,
-                    rotate: 35,
-                    stagger:1,
-                    scrollTrigger: {
-                        trigger: ".section3__box1",
-                        start: "top 50%",
-                        end: " +=200",
-                        scrub: 2.5,
-                        // markers: true 
-                    }, 
-                })
-            }
- 
+        //     gsap.to(".section3__myphoto",{
+        //         width:"20vw",
+        //         height:"28vw",
+        //         duration:1, 
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             markers: true 
+        //         },
+        //     })
 
+        //     gsap.to(".section3__box1 .section3__button",{
+        //         opacity:1,
+        //         duration:1,
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         },
+        //     })
+        //     gsap.to(".section3__box2",{
+        //         width:"96vw",
+        //         opacity:1,
+        //         duration:1,
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             markers: false 
+        //         }, 
+        //     })
+        //     gsap.to(".section3__box2 .section3__box2__button",{
+        //         y:0,
+        //         opacity:1,
+        //         duration:2.5,
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         }, 
+        //     })
+        //     gsap.to(".section3__box3",{
+        //         width:"96vw",
+        //         opacity:1,
+        //         duration:1, 
+        //         duration:.5,
+        //         ease: Bounce.easeOut,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         }, 
+        //     })
+        //     gsap.to(".section3__box3 .section__right__img1",{
+        //         opacity:1,
+        //         duration:1.5, 
+        //         delay:.5,
+        //         rotate: 35,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         }, 
+        //     })
+        //     gsap.to(".section3__box3 .section__right__img2",{
+        //         opacity:1,
+        //         duration:1.5, 
+        //         delay:.5,
+        //         rotate: 35,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         }, 
+        //     })
+        //     gsap.to(".section3__box3 .section__right__img3",{
+        //         opacity:1,
+        //         duration:1.5, 
+        //         delay:.5,
+        //         rotate: 35,
+        //         stagger:1,
+        //         scrollTrigger: {
+        //             trigger: ".section3__box1",
+        //             start: "top 50%",
+        //             end: " +=200",
+        //             scrub: 2.5,
+        //             // markers: true 
+        //         }, 
+        //     })
+        // } else {
+            gsap.to(".section3__box1",{
+                x:0,
+                duration:1, 
+                opacity:1,
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                },
+            })
+
+            gsap.to(".section3__myphoto",{
+                width:"20vw",
+                height:"28vw",
+                duration:1, 
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                },
+            })
+
+            gsap.to(".section3__box1 .section3__button",{
+                opacity:1,
+                duration:1,
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                },
+            })
+            gsap.to(".section3__box2",{
+                x:0,
+                opacity:1,
+                duration:1,
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    markers: false 
+                }, 
+            })
+            gsap.to(".section3__box2 .section3__box2__button",{
+                y:0,
+                opacity:1,
+                duration:2.5,
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            })
+            gsap.to(".section3__box3",{
+                x:0,
+                opacity:1,
+                duration:1, 
+                duration:.5,
+                ease: Bounce.easeOut,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            })
+            gsap.to(".section3__box3 .section__right__img1",{
+                opacity:1,
+                duration:1.5, 
+                delay:.5,
+                rotate: 35,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            })
+            gsap.to(".section3__box3 .section__right__img2",{
+                opacity:1,
+                duration:1.5, 
+                delay:.5,
+                rotate: 35,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            })
+            gsap.to(".section3__box3 .section__right__img3",{
+                opacity:1,
+                duration:1.5, 
+                delay:.5,
+                rotate: 35,
+                stagger:1,
+                scrollTrigger: {
+                    trigger: ".section3__box1",
+                    start: "top 50%",
+                    end: " +=200",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            })
+        // }
         </script>
 
         <script>
+        gsap.registerPlugin(ScrollTrigger);
+        // section4
+        gsap.set(".banner1__wrap",{ x:-2000, opacity:0})
+        gsap.set(".banner1__eye",{y:-400, opacity:0})
+        gsap.set(".banner1__desc span",{y:-400, opacity:0})
+        let t4 = gsap.timeline()
 
-            gsap.set(".banner1__wrap",{ witdh:"0", opacity:0})
-            gsap.to(".banner1__wrap",{
-                width:"96vw",
+            t4.to(".banner1__wrap",{
+                x:0,
                 opacity:1,
                 ease: Bounce.easeOut,
                 duration:1.5, 
@@ -488,8 +714,50 @@
                     start: "top 50%",
                     end: " +=500",
                     scrub: 2.5,
-                    markers: true 
+                    // markers: true 
                 }, 
+            })
+
+            t4.to(".banner1__eye", {
+                y:0,
+                opacity: 1,
+                ease: "bounce.inOut",
+                scrollTrigger: {
+                    trigger: ".banner1__wrap",
+                    start: "top 50%",
+                    end: " +=500",
+                    scrub: 2.5,
+                    // markers: true 
+                }, 
+            }) 
+
+            t4.to(".banner1__desc span", {
+                y:0,
+                opacity: 1,
+                ease: "bounce.inOut",
+                delay:5,
+                duration: 3,
+            
+            },"+= 10000") 
+        </script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            // section5
+            gsap.set("#section5",{ x:-2000, opacity:1, duration:3})
+            
+            let t5 = gsap.timeline()
+            t5.to("#section5",
+                {
+                 x:0, 
+                 opacity:1, 
+                //  duration: 3, 
+                scrollTrigger:{ 
+                    trigger: "#section5",
+                    ease: "bounce.inOut",
+                    start: "top 0%",
+                    end: " +=500",
+                    markers: true,
+                }
             })
         </script>
     </body>
