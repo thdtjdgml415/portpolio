@@ -167,6 +167,20 @@
             </div>
           </section>
           <!-- section3 -->
+          <section id="section4">
+            <div class="banner1__eye"></div>
+            <div class="banner1__wrap">
+              <div class="banner1__bg">
+                <img src="./assets3/img/banner2-min.png" alt="" />
+              </div>    
+              <div class="banner1__desc">나의 작업물</div>
+              <div class="banner1__desc__sub">
+                너무 잘했다고 놀라지 마시오! 놀람주의
+              </div>
+              <div class="banner1__img"></div>
+            </div>
+          </section>
+          <!-- section4 -->
 
 
         
@@ -321,93 +335,281 @@
     </script>
 
     <script>
+    const windows = screen.width   
     // section3
-    gsap.set(".section3__box1",{width:"0"})
+    gsap.set(".section3__box1",{width:"0", opacity:0})
     gsap.set(".section3__box1 .section3__myphoto",{width:"0", height:"0"})
     gsap.set(".section3__box1 .section3__button",{opacity:0})
-    gsap.set(".section3__box2",{width:"0"})
+    
+    gsap.set(".section3__box2",{width:"0", opacity:0})
     gsap.set(".section3__box2 .section3__box2__button",{opacity:0, y:200})
-    gsap.set(".section3__box3",{width:"0"})
+    
+    gsap.set(".section3__box3",{width:"0", opacity:0})
+    gsap.set(".section3__box3 .section__right__img1",{opacity:0, rotate: 0})
+    gsap.set(".section3__box3 .section__right__img2",{opacity:0, rotate: -35})
+    gsap.set(".section3__box3 .section__right__img3",{opacity:0, rotate: -35})
+    if(windows < 485) {
+        gsap.to(".section3__box1",{
+            width:"96vw",
+            duration:1, 
+            opacity:1,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            },
+        })
 
-    gsap.to(".section3__box1",{
-        width:"47.5vw",
-        duration:1, 
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            // markers: true 
-        },
-    })
+        gsap.to(".section3__myphoto",{
+            width:"20vw",
+            height:"28vw",
+            duration:1, 
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                markers: false 
+            },
+        })
 
-    gsap.to(".section3__myphoto",{
-        width:"20vw",
-        height:"28vw",
-        duration:1, 
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            markers: false 
-        },
-    })
+        gsap.to(".section3__box1 .section3__button",{
+            opacity:1,
+            duration:1,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            },
+        })
+        gsap.to(".section3__box2",{
+            width:"96vw",
+            opacity:1,
+            duration:1, 
+            delay:1,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                markers: false 
+            }, 
+        })
+        gsap.to(".section3__box2 .section3__box2__button",{
+            y:0,
+            opacity:1,
+            duration:2.5,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3",{
+            width:"96vw",
+            opacity:1,
+            duration:1, 
+            duration:.5,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img1",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img2",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img3",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            stagger:1,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+    } else {
 
-    gsap.to(".section3__box1 .section3__button",{
-        opacity:1,
-        duration:1,
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            // markers: true 
-        },
-    })
+        gsap.to(".section3__myphoto",{
+            width:"20vw",
+            height:"28vw",
+            duration:1, 
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                markers: false 
+            },
+        })
 
+        gsap.to(".section3__box1 .section3__button",{
+            opacity:1,
+            duration:1,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            },
+        })
 
-    gsap.to(".section3__box2",{
-        width:"47.5vw",
-        duration:1, 
-        delay:1,
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            markers: false 
-        }, 
-    })
-    gsap.to(".section3__box2 .section3__box2__button",{
-        y:0,
-        opacity:1,
-        duration:2.5,
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            // markers: true 
-        }, 
-    })
-    gsap.to(".section3__box3",{
-        width:"47.5vw",
-        duration:1, 
-        ease: Bounce.easeOut,
-        scrollTrigger: {
-            trigger: ".section3__box1",
-            start: "top 50%",
-            end: " +=200",
-            scrub: 2.5,
-            // markers: true 
-        }, 
-    })
+        gsap.to(".section3__box1",{
+            width:"47.5vw",
+            duration:1, 
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            },
+        })
+
+        gsap.to(".section3__box2",{
+            width:"47.5vw",
+            duration:1, 
+            delay:1,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                markers: false 
+            }, 
+        })
+        gsap.to(".section3__box2 .section3__box2__button",{
+            y:0,
+            opacity:1,
+            duration:2.5,
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3",{
+            width:"47.5vw",
+            duration:1, 
+            ease: Bounce.easeOut,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img1",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img2",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+        gsap.to(".section3__box3 .section__right__img3",{
+            opacity:1,
+            duration:1.5, 
+            delay:.5,
+            rotate: 35,
+            stagger:1,
+            scrollTrigger: {
+                trigger: ".section3__box1",
+                start: "top 50%",
+                end: " +=200",
+                scrub: 2.5,
+                // markers: true 
+            }, 
+        })
+    }
+
+    </script>
+
+    <script>
+
+        gsap.set(".banner1__wrap",{ witdh:"0", opacity:0})
+        gsap.to(".banner1__wrap",{
+            width:"96vw",
+            opacity:1,
+            ease: Bounce.easeOut,
+            duration:1.5, 
+            scrollTrigger: {
+                trigger: ".banner1__wrap",
+                start: "top 50%",
+                end: " +=500",
+                scrub: 2.5,
+                markers: true 
+            }, 
+        })
     </script>
   </body>
 </html>

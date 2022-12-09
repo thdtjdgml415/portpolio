@@ -1,0 +1,83 @@
+/* section4 */
+#section4 {
+    position: relative;
+    width: 0;
+}
+
+.banner1__wrap {
+    padding: 5vw 5vw;
+    border: 0.4vw solid #000;
+    margin: 9vw 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    background: #60A6FE;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner1__eye {
+    position: absolute;
+    background-image: url(../img/눈-min.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 35vw;
+    top: -16vw;
+    padding: 16vw;
+    z-index: 10;
+}
+
+.banner1__desc {
+    position: relative;
+    font-size: 13vw;
+    font-family: "OKChan";
+    color: #fff;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    z-index: 10;
+}
+
+.banner1__wrap .banner1__desc__sub {
+    position: relative;
+    text-align: right;
+    z-index: 10;
+    right: 5vw;
+    top: -3vw;
+    font-size: 1vw;
+}
+
+.banner1__bg img {
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner1__wrap .banner1__img {
+    position: absolute;
+    background-image: url(../img/HeadsetGIF-min.gif);
+    padding: 14vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 20;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 486px) {
+    .banner1__wrap {
+        width: 96vw;
+        padding: 5vw 5vw;
+        border: 0.4vw solid #000;
+        margin: 1vw 2vw 3vw;
+        border-radius: 1vw;
+        text-align: center;
+        background: #60A6FE;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* /section4 */

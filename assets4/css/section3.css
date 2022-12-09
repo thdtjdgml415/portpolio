@@ -1,6 +1,5 @@
 #section3 {
     width: 96vw;
-    height: 200vh;
     margin: 1vw 2vw;
     display: grid;
     grid-template-areas:
@@ -92,7 +91,6 @@
     position: absolute;
     left: 0vw;
     top: 1vw;
-    transform: rotate(30deg);
     z-index: 10;
 }
 
@@ -116,4 +114,20 @@
     position: absolute;
     right: 0;
     top: 9vw;
+}
+
+@media (max-width: 485px) {
+    #section3 {
+        width: 96vw;
+        margin: 1vw 2vw;
+        display: grid;
+        grid-template-areas:
+            "section3__box1"
+            "section3__box2"
+            "section3__box3"
+        ;
+        grid-template-columns: 96vw 96vw 96vw !important;
+        grid-template-rows: 27.084vw 9.17vw 27.084vw;
+        grid-gap: 3vw;
+    }
 }
