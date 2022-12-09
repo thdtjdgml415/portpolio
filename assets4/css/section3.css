@@ -41,7 +41,6 @@
     padding: 1.5vw 5vw;
     font-size: 4vw;
     background: #FFEB26;
-    display: inline-block;
     right: 3vw;
     bottom: 2vw;
     border-radius: 1vw;
@@ -52,26 +51,85 @@
 
 .section3__box2 {
     grid-area: section3__box2;
-    border: 0.4vw solid #000;
-    border-radius: 1vw;
-    padding: 1vw;
-    border: 0.4vw solid #000;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5vw;
+    margin: 0;
+    background: #fff;
+}
+
+button {
+    width: 100%;
+    height: 5vw;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.section3__box2__button {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "CookieRun";
+    color: #000;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
     background: #FFEB26;
-    font-size: 4vw;
-    text-align: center;
-    border-radius: 1vw;
+    border: 0.4vw solid #000;
+    border-radius: 0.75em;
     text-shadow: 0.2vw 0.2vw #fff;
-    background-image: url(../img/noise.png);
-    background-blend-mode: color;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-.section3__box2 .section3__box2__button {
-    font-size: 4vw;
-    text-align: center;
-    border-radius: 1vw;
-    text-shadow: 0.2vw 0.2vw #fff;
-
+button.section3__box2__button .desc {
+    position: relative;
+    left: 0;
+    top: -2vw;
 }
+
+button.section3__box2__button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFEB26;
+    border: 0.4vw solid #000;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #fff20387;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.section3__box2__button:hover {
+    background: #FFEB26;
+    transform: translate(0, 0.25em);
+}
+
+button.section3__box2__button:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.section3__box2__button:active {
+    background: #FFEB26;
+    transform: translate(0em, 0.75em);
+}
+
+button.section3__box2__button:active::before {
+    box-shadow: 0 0 0 2px #FFEB26, 0 0 #FFEB26;
+    transform: translate3d(0, 0, -1em);
+}
+
 
 .section3__box3 {
     grid-area: section3__box3;

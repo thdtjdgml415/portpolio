@@ -64,6 +64,11 @@ textarea {
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* 가로모드 초기화 */
 html {
   -ms-text-size-abjust: 100%;
