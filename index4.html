@@ -273,6 +273,57 @@
                 </div>
             </section>
             <!-- section6 -->
+            <section id="section7">
+                <div class="section7__bg"></div>
+                <h2>쎠 미더 머니머니머니 리액트코딩</h2>
+                <div class="section7__logo"></div>
+                <div class="section7__desc__sub">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
+                <div class="section7__wrap">
+                    <div class="section7__box1">
+                        <div class="section7-1__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section7-1__touch">클릭</p>
+                        </div>
+                        <div class="section7__box1__top">
+                            <div class="section7__box1__top__img"></div>
+                        </div>
+                        <div class="section7__box1__bottom">
+                            반응형 사이트를 
+                            만들어보았습니다.
+                        </div>
+                    </div>
+                    <!-- box1 -->
+                    <div class="section7__box2">
+                        <div class="section7-2__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section7-2__touch">클릭</p>
+                        </div>
+                        <div class="section7__box2__top">
+                            <div class="section7__box2__top__img"></div>
+                        </div>
+                        <div class="section7__box2__bottom">
+                            다양한 api를 이용하여 
+                            만들어보았습니다.
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="section7__box3">
+                        <div class="section7-3__click">
+                            <img src="./assets4/img/hand.gif" alt="" />
+                            <p class="section7-3__touch">클릭</p>
+                        </div>
+                        <div class="section7__box3__top">
+                            <div class="section7__box3__top__img"></div>
+                        </div>
+                        <div class="section7__box3__bottom">
+                            유튜브 api를 이용하여 
+                            사이트를 만들어 보았습니다.
+                        </div>
+                    </div>
+                    <!-- box3 -->
+                </div>
+            </section>
+            <!-- section7 -->
 
 
             
@@ -293,6 +344,26 @@
             splitTextWrap = "<span>" + splitTextWrap + "</span>";
             text2.innerHTML = splitTextWrap2;
 
+            // smooth
+
+            gsap.registerPlugin(ScrollTrigger);
+
+            const lenis = new Lenis({
+            duration: 1,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            });
+
+            //get scroll value
+            lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
+            console.log({ scroll, limit, velocity, direction, progress });
+            });
+
+            function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
         </script>
     <script>
          gsap.registerPlugin(ScrollTrigger);
@@ -743,18 +814,18 @@
         <script>
             gsap.registerPlugin(ScrollTrigger);
             // section5
-            gsap.set("#section5",{ x:-2000, opacity:1, duration:3})
+            gsap.set("#section5",{ x:-2000, opacity:1,})
             
             let t5 = gsap.timeline()
             t5.to("#section5",
                 {
                  x:0, 
+                 duration: .5, 
                  opacity:1, 
-                //  duration: 3, 
+                 ease: "bounce.inOut",
                 scrollTrigger:{ 
                     trigger: "#section5",
-                    ease: "bounce.inOut",
-                    start: "top 0%",
+                    start: "top 50%",
                     end: " +=500",
                     markers: true,
                 }

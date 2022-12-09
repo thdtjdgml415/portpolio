@@ -1,0 +1,369 @@
+#section7 {
+    width: 96vw;
+    border: 0.4vw solid #000;
+    margin: 1vw 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    background: #FF6DCD;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+#section7 .section7__logo {
+    background-image: url(../img/coding.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7vw;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+}
+
+#section7 .section7__bg {
+    background-image: url(../img/circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -70vw;
+    bottom: -135vw;
+    width: 5000px;
+    height: 5000px;
+    z-index: 0;
+    animation: spin 60s infinite linear;
+}
+
+
+
+#section7 h2 {
+    position: relative;
+    font-size: 5.21vw;
+    margin: 1vw;
+    z-index: 10;
+    text-shadow: 0.2vw 0.2vw #000;
+    color: #fff;
+}
+
+#section7 .section7__desc__sub {
+    font-size: 1.1vw;
+    margin-bottom: 5vw;
+    position: relative;
+    z-index: 10;
+}
+
+.section7__wrap {
+    display: grid;
+    grid-template-areas:
+        "section7__box1 section7__box2 section7__box3"
+    ;
+    grid-template-columns: 26.15vw 26.15vw 26.15vw;
+    grid-template-rows: 36.31vw 2vw;
+    grid-gap: 1vw;
+    justify-content: space-evenly;
+}
+
+/* box1 */
+
+.section7__box1 {
+    grid-area: section7__box1;
+    display: grid;
+    grid-template-areas:
+        "section7__box1__top"
+        "section7__box1__bottom"
+    ;
+    grid-template-columns: 26.15vw;
+    grid-template-rows: 25vw 11vw;
+    justify-content: center;
+    border-radius: 1vw;
+    z-index: 10;
+    position: relative;
+}
+
+.section7__box1__top__img {
+    background-image: url(../img/react1.jpg);
+    background-size: cover;
+    width: 20vw;
+    height: 20vw;
+    border: 0.4vw solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.section7__box1__top {
+    background: #8060FE;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: 0.4vw solid #000;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.section7__box1 .section7__box1__top::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box1 .section7__box1__top:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
+
+.section7__box1 .section7__box1__bottom {
+    border-bottom: 0.4vw solid #000;
+    border-left: 0.4vw solid #000;
+    border-right: 0.4vw solid #000;
+    border-end-start-radius: 1vw;
+    border-end-end-radius: 1vw;
+    display: grid;
+    align-items: center;
+    background-color: #5AD2B4;
+    font-size: 1.88vw;
+    padding: 3vw;
+}
+
+.section7__box1 .section7-1__click {
+    position: absolute;
+    right: 15vw;
+    bottom: 10vw;
+    padding: 2vw;
+    z-index: 40;
+    transform: rotate(105deg);
+}
+
+.section7__box1 .section7-1__click img {
+    width: 5vw;
+}
+
+.section7__box1 .section7-1__click .section7-1__touch {
+    font-size: 1.6vw;
+    text-align: right;
+    position: absolute;
+    top: 3;
+    right: 3vw;
+}
+
+/* box1 */
+
+/* box2 */
+
+.section7__box2 {
+    grid-area: section7__box2;
+    display: grid;
+    grid-template-areas:
+        "section7__box2__top"
+        "section7__box2__bottom"
+    ;
+    grid-template-columns: 26.15vw;
+    grid-template-rows: 25vw 11vw;
+    justify-content: center;
+    border-radius: 1vw;
+    z-index: 10;
+    position: relative;
+}
+
+.section7__box2__top__img {
+    background-image: url(../img/react2.png);
+    background-size: cover;
+    width: 20vw;
+    height: 20vw;
+    border: 0.4vw solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.section7__box2__top {
+    background: #FEBF60;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: 0.4vw solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.section7__box2 .section7__box2__top::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box2 .section7__box2__top:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
+.section7__box2 .section7__box2__bottom {
+    border-bottom: 0.4vw solid #000;
+    border-left: 0.4vw solid #000;
+    border-right: 0.4vw solid #000;
+    border-end-start-radius: 1vw;
+    border-end-end-radius: 1vw;
+    display: grid;
+    align-items: center;
+    background-color: #5AD2B4;
+    font-size: 1.88vw;
+    padding: 3vw;
+}
+
+.section7__box2 .section7-2__click {
+    position: absolute;
+    right: 15vw;
+    bottom: 27vw;
+    padding: 2vw;
+    z-index: 40;
+    transform: rotate(145deg);
+}
+
+.section7__box2 .section7-2__click img {
+    width: 5vw;
+}
+
+.section7__box2 .section7-2__click .section7-2__touch {
+    font-size: 1.6vw;
+    text-align: right;
+    position: absolute;
+    top: 3;
+    right: 3vw;
+}
+
+/* box2 */
+
+/* box3 */
+
+.section7__box3 {
+    grid-area: section7__box3;
+    display: grid;
+    grid-template-areas:
+        "section7__box3__top"
+        "section7__box3__bottom"
+    ;
+    grid-template-columns: 26.15vw;
+    grid-template-rows: 25vw 11vw;
+    justify-content: center;
+    border-radius: 1vw;
+    z-index: 10;
+    position: relative;
+}
+
+.section7__box3__top__img {
+    background-image: url(../img/react3.png);
+    background-size: cover;
+    width: 20vw;
+    height: 20vw;
+    border: 0.4vw solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.section7__box3__top {
+    background: #60A6FE;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: 0.4vw solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.section7__box3 .section7__box3__top::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    background-image: url(../img/yellowcircle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    scale: 1.0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 1.69, 0.58, 1);
+}
+
+.section7__box3 .section7__box3__top:hover:before {
+    opacity: 1;
+    scale: 1.5;
+    background-color: #FDFFB2;
+    animation: spin 30s infinite linear;
+}
+
+.section7__box3 .section7__box3__bottom {
+    border-bottom: 0.4vw solid #000;
+    border-left: 0.4vw solid #000;
+    border-right: 0.4vw solid #000;
+    border-end-start-radius: 1vw;
+    border-end-end-radius: 1vw;
+    display: grid;
+    align-items: center;
+    background-color: #5AD2B4;
+    font-size: 1.88vw;
+    padding: 2vw;
+}
+
+.section7__box3 .section7-3__click {
+    position: absolute;
+    right: 0vw;
+    bottom: 15vw;
+    padding: 2vw;
+    z-index: 40;
+    transform: rotate(0deg);
+}
+
+.section7__box3 .section7-3__click img {
+    width: 5vw;
+}
+
+.section7__box3 .section7-3__click .section7-3__touch {
+    font-size: 1.6vw;
+    text-align: right;
+    position: absolute;
+    top: 3;
+    right: 3vw;
+}
+
+/* box3 */
