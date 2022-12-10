@@ -29,10 +29,10 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    left: -70vw;
-    bottom: -135vw;
-    width: 5000px;
-    height: 5000px;
+    left: -52vw;
+    top: -40vw;
+    width: 200vw;
+    height: 200vw;
     z-index: 0;
     animation: spin 60s infinite linear;
 }
