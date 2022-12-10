@@ -8,7 +8,7 @@
     position: relative;
     background-color: #FFEB26;
     margin: 1vw 2vw 1vw 2vw;
-    border: 0.4vw solid #000;
+    border: 0.3vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/noise.png);
     background-blend-mode: color;
@@ -17,6 +17,7 @@
     display: inline-block;
     text-align: center;
     width: 0;
+    opacity: 0;
 }
 
 .section1__box__inner {

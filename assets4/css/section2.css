@@ -5,12 +5,13 @@
     padding: 0.5vw 2vh;
     margin: 1vw 2vw;
     background: #FF6DCD;
-    border: 0.4vw solid #000;
+    border: 0.3vw solid #000;
     border-radius: 1vw;
     position: relative;
     overflow: hidden;
     background-image: url(../img/noise.png);
     background-blend-mode: color;
+    opacity: 0;
 }
 
 .section2__box__inner {}
@@ -62,7 +63,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10vw;
-    border: 0.1vw solid #000;
+    border: 0.3vw solid #000;
     width: 18vw;
     height: 18vw;
     position: absolute;
@@ -78,7 +79,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10vw;
-    border: 0.1vw solid #000;
+    border: 0.3vw solid #000;
     width: 14vw;
     height: 14vw;
     position: absolute;
@@ -92,7 +93,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25vw;
-    border: 0.1vw solid #000;
+    border: 0.3vw solid #000;
     width: 21vw;
     height: 21vw;
     position: absolute;
