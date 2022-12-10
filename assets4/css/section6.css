@@ -28,7 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    left: -70vw;
+    left: -83vw;
     bottom: -135vw;
     width: 5000px;
     height: 5000px;
@@ -40,8 +40,8 @@
 
 #section6 h2 {
     position: relative;
-    font-size: 5.21vw;
-    margin: 1vw;
+    font-size: 4.21vw;
+    margin: 3vw 0 1vw 0;
     z-index: 10;
     text-shadow: 0.2vw 0.2vw #000;
     color: #fff;
@@ -49,7 +49,7 @@
 
 #section6 .section6__desc__sub {
     font-size: 1.1vw;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
     position: relative;
     z-index: 10;
 }
@@ -59,8 +59,8 @@
     grid-template-areas:
         "section6__box1 section6__box2 section6__box3"
     ;
-    grid-template-columns: 26.15vw 26.15vw 26.15vw;
-    grid-template-rows: 36.31vw 2vw;
+    grid-template-columns: 23.15vw 23.15vw 23.15vw;
+    grid-template-rows: 34.31vw 2vw;
     grid-gap: 1vw;
     justify-content: space-evenly;
 }
@@ -74,8 +74,8 @@
         "section6__box1__top"
         "section6__box1__bottom"
     ;
-    grid-template-columns: 26.15vw;
-    grid-template-rows: 25vw 11vw;
+    grid-template-columns: 23.15vw;
+    grid-template-rows: 23vw 10vw;
     justify-content: center;
     border-radius: 1vw;
     z-index: 10;
@@ -85,8 +85,8 @@
 .section6__box1__top__img {
     background-image: url(../img/php1-min.png);
     background-size: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     border: 0.4vw solid #000;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -141,7 +141,7 @@
     align-items: center;
     background-color: #5AD2B4;
     font-size: 1.88vw;
-    padding: 3vw;
+    padding: 2vw;
 }
 
 .section6__box1 .section6-1__click {
@@ -161,8 +161,8 @@
     font-size: 1.6vw;
     text-align: right;
     position: absolute;
-    top: 3;
-    right: 3vw;
+    top: 5vw;
+    right: 5vw;
 }
 
 /* box1 */
@@ -176,8 +176,8 @@
         "section6__box2__top"
         "section6__box2__bottom"
     ;
-    grid-template-columns: 26.15vw;
-    grid-template-rows: 25vw 11vw;
+    grid-template-columns: 23.15vw;
+    grid-template-rows: 23vw 10vw;
     justify-content: center;
     border-radius: 1vw;
     z-index: 10;
@@ -187,8 +187,8 @@
 .section6__box2__top__img {
     background-image: url(../img/php2-min.png);
     background-size: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     border: 0.4vw solid #000;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -241,13 +241,13 @@
     align-items: center;
     background-color: #5AD2B4;
     font-size: 1.88vw;
-    padding: 3vw;
+    padding: 2vw;
 }
 
 .section6__box2 .section6-2__click {
     position: absolute;
     right: 15vw;
-    bottom: 27vw;
+    bottom: 25vw;
     padding: 2vw;
     z-index: 40;
     transform: rotate(145deg);
@@ -261,7 +261,7 @@
     font-size: 1.6vw;
     text-align: right;
     position: absolute;
-    top: 3;
+    top: 6vw;
     right: 3vw;
 }
 
@@ -276,8 +276,8 @@
         "section6__box3__top"
         "section6__box3__bottom"
     ;
-    grid-template-columns: 26.15vw;
-    grid-template-rows: 25vw 11vw;
+    grid-template-columns: 23.15vw;
+    grid-template-rows: 23vw 10vw;
     justify-content: center;
     border-radius: 1vw;
     z-index: 10;
@@ -287,8 +287,8 @@
 .section6__box3__top__img {
     background-image: url(../img/lodingfinal.gif);
     background-size: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
