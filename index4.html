@@ -166,7 +166,7 @@
                             <p class="section6-1__touch">클릭</p>
                         </div>
                         <div class="section6__box1__top">
-                            <div class="section6__box1__top__img"></div>
+                            <a href="/"><div class="section6__box1__top__img"></div></a>
                         </div>
                         <div class="section6__box1__bottom">
                             이미지 다운로드 사이트를 만들어 보았습니다.
@@ -295,6 +295,97 @@
                 </div>
             </section>
             <!-- section8 -->  
+            <section id="section9">
+                <div class="banner2__eye"></div>
+                <div class="banner2__wrap">
+                  <div class="banner2__bg">
+                    <img src="./assets2/img/gamebanner.png" alt="" />
+                  </div>
+                  <div class="banner2__desc">나의 게임방</div>
+                  <div class="banner2__desc__sub">
+                    스크립트 위주의 작업물입니다. <br />
+                    게임도 직접 할 수 있습니다.
+                  </div>
+                  <div class="banner2__img2"></div>
+                </div>
+                <div class="banner2__img"></div>
+              </section>
+              <!-- section9 -->
+              <section id="section10">
+                <div class="game__wrap">
+                    <div class="search__game">
+                        <a href=""><button class="search__desc"><div class="desc">서치게임</div></button></a>
+                    </div>
+                    <div class="game__label">
+                        <div class="desc">
+                            스타트를 누르면
+                            <img src="./assets/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
+                            있습니다. 스타트를 누르면
+                            <img src="./assets/img/가스레인지.gif" alt="가스레인지" />
+                            게임을 할 수 있습니다. 
+                            스타트를 누르면
+                            <img src="./assets/img/가스레인지.gif" alt="가스레인지" />
+                            게임을 할 수 있습니다. 
+                            <img src="./assets/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
+                            있습니다. 스타트를 누르면
+                            <img src="./assets/img/가스레인지.gif" alt="가스레인지" />
+                            게임을 할 수 있습니다. 스타트를 누르면
+                        </div>
+                    </div>
+                    <div class="section10__game">
+                        <div class="tetris__game"><div class="desc tetris">테트리스</div></div>
+                        <div class="card__game"><div class="desc ">서치게임</div></div>
+                    </div>
+                    <div class="label2__game">
+                        <div class="desc">
+                            모든 게임은 자바스크립트로 구현했습니다.
+                            <img src="./assets/img/Nauto.gif" alt="주사위" />
+                            모든 게임은 자바스크립트로 구현했습니다.
+                            <img src="./assets/img/Nauto.gif" alt="주사위" />
+                            모든 게임은 자바스크립트로 구현했습니다.
+                            <img src="./assets/img/Nauto.gif" alt="주사위" />
+                            모든 게임은 자바스크립트로 구현했습니다.
+                            <img src="./assets/img/Nauto.gif" alt="주사위" />
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <!-- section10 -->
+              <section id="section11">
+                <div class="section11__wrap">
+                    <div class="parallax__effect">
+                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                    </div>
+                    <div class="game__effect">
+                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                    </div>
+                    <div class="quiz__effect">
+                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                    </div>
+                    <div class="mouse__effect">
+                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                    </div>
+                    <div class="slider__effect">
+                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                    </div>
+                </div>
+              </section>
+              <!-- section11 -->
+              <section id="section12">
+                <div class="banner3__eye"></div>
+                <div class="banner3__wrap">
+                  <div class="banner3__bg">
+                    <img src="./assets2/img/banner4.png" alt="배너" />
+                  </div>
+                  <div class="banner3__desc">준비된 개발자</div>
+                  <div class="banner3__desc__sub">
+                    항상 준비되어 있습니다. <br />
+                    연락주세요!
+                  </div>
+                  <div class="banner3__img"></div>
+                </div>
+              </section>
+              <!-- section12 -->
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -314,24 +405,24 @@
 
             // smooth
 
-            gsap.registerPlugin(ScrollTrigger);
+            // gsap.registerPlugin(ScrollTrigger);
 
-            const lenis = new Lenis({
-            duration: 1,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-            });
+            // const lenis = new Lenis({
+            // duration: 1,
+            // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            // });
 
-            //get scroll value
-            lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
-            // console.log({ scroll, limit, velocity, direction, progress });
-            });
+            // //get scroll value
+            // lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
+            // // console.log({ scroll, limit, velocity, direction, progress });
+            // });
 
-            function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-            }
+            // function raf(time) {
+            // lenis.raf(time);
+            // requestAnimationFrame(raf);
+            // }
 
-            requestAnimationFrame(raf);
+            // requestAnimationFrame(raf);
         </script>
     <script>
          gsap.registerPlugin(ScrollTrigger);
@@ -498,7 +589,7 @@
                 opacity:1,
                 delay:1,
                 scrollTrigger:{
-                    start: "top 50%",
+                    start: "top 80%",
                     trigger: ".section3__box1",
                     // markers: true
                 }
@@ -509,7 +600,7 @@
                 opacity:1,
                 delay:1.5,
                 scrollTrigger:{
-                    start: "top 50%",
+                    start: "top 80%",
                     trigger: ".section3__box1",
                     // markers: true
                 }
@@ -520,7 +611,7 @@
                 delay:2.5,
                 rotate:35,
                 scrollTrigger:{
-                    start: "top 50%",
+                    start: "top 80%",
                     trigger: ".section3__box1",
                     // markers: true
                 }
@@ -533,7 +624,7 @@
                 delay:3.5,
                 rotate:35,
                 scrollTrigger:{
-                    start: "top 50%",
+                    start: "top 80%",
                     trigger: ".section3__box1",
                     // markers: true
                 }
@@ -545,7 +636,7 @@
                 rotate:35,
                 ease: "elastic.inOut(1, 0.3)",
                 scrollTrigger:{
-                    start: "top 50%",
+                    start: "top 80%",
                     trigger: ".section3__box1",
                     // markers: true
                 }

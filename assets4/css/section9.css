@@ -1,57 +1,51 @@
-/* section4 */
-#section4 {
+/* section9 */
+#section9 {
     position: relative;
-
 }
 
-.banner1__wrap {
+.banner2__wrap {
     width: 96vw;
     padding: 5vw 5vw;
     border: 0.3vw solid #000;
-    margin: 9vw 2vw 1vw;
+    margin: 8vw 2vw 3vw;
     border-radius: 1vw;
     text-align: center;
-    background: #60A6FE;
+    background: #FFEB26;
     position: relative;
     overflow: hidden;
 }
 
 
-.banner1__eye {
+.banner2__eye {
     position: absolute;
     background-image: url(../img/눈-min.gif);
     background-repeat: no-repeat;
     background-size: contain;
-    left: 35vw;
+    left: 33vw;
     top: -16vw;
     padding: 16vw;
     z-index: 10;
 }
 
-.banner1__desc {
+.banner2__desc {
     position: relative;
     font-size: 13vw;
     font-family: "OKChan";
     color: #fff;
-    -webkit-text-stroke: 0.1vw #000;
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
 }
 
-.banner1__desc span {
-    font-family: "OKChan";
-}
-
-.banner1__wrap .banner1__desc__sub {
+.banner2__wrap .banner2__desc__sub {
     position: relative;
     text-align: right;
     z-index: 10;
-    right: 5vw;
-    top: -3vw;
+    right: 9vw;
+    top: -2vw;
     font-size: 1vw;
 }
 
-.banner1__bg img {
+.banner2__bg img {
     position: absolute;
     width: 80vw;
     top: 50%;
@@ -59,30 +53,28 @@
     transform: translate(-50%, -50%);
 }
 
-.banner1__wrap .banner1__img {
+.banner2__img {
     position: absolute;
-    background-image: url(../img/HeadsetGIF-min.gif);
+    background-image: url(../img/glasses.gif);
     padding: 14vw;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 20;
-    top: 70%;
-    left: 50%;
+    top: 75%;
+    left: 52%;
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 486px) {
-    .banner1__wrap {
-        width: 96vw;
-        padding: 5vw 5vw;
-        border: 0.3vw solid #000;
-        margin: 1vw 2vw 3vw;
-        border-radius: 1vw;
-        text-align: center;
-        background: #60A6FE;
-        position: relative;
-        overflow: hidden;
-    }
+.banner2__img2 {
+    position: absolute;
+    background-image: url(../img/게임기.gif);
+    padding: 8vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 20;
+    top: 76%;
+    left: 8vw;
+    transform: translate(-50%, -50%);
 }
 
-/* /section4 */
+/*/ section9 */
