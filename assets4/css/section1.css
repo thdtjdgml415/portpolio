@@ -1,6 +1,5 @@
 #section1 {
     width: 96vw;
-    height: 10vh;
     display: inline-block;
 }
 
@@ -40,7 +39,6 @@
     transform: translateY(-100px);
 }
 
-.section1__box__inner .desc .split {}
 
 @media (max-width: 1200px) {}
 

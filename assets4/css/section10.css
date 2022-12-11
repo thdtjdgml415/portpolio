@@ -142,7 +142,6 @@ button.search__desc:active:before {
     ;
     grid-template-columns: 47.5vw 47.5vw;
     grid-template-rows: 20vw;
-
     justify-content: space-between;
 }
 
@@ -154,6 +153,9 @@ button.search__desc:active:before {
     display: grid;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .game__wrap .tetris__game .desc {
@@ -185,6 +187,9 @@ button.search__desc:active:before {
     border: 0.3vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/cardgame-min.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     justify-content: center;
     align-items: center;
