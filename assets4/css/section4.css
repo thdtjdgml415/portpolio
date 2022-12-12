@@ -1,7 +1,6 @@
 /* section4 */
 #section4 {
     position: relative;
-
 }
 
 .banner1__wrap {
@@ -30,16 +29,20 @@
 
 .banner1__desc {
     position: relative;
-    font-size: 13vw;
-    font-family: "OKChan";
-    color: #fff;
-    -webkit-text-stroke: 0.1vw #000;
-    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
+
 }
 
 .banner1__desc span {
     font-family: "OKChan";
+    font-size: 13vw;
+    color: #fff;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    display: inline-block;
+    white-space: pre;
+
+
 }
 
 .banner1__wrap .banner1__desc__sub {
@@ -49,6 +52,11 @@
     right: 5vw;
     top: -3vw;
     font-size: 1vw;
+}
+
+.banner1__desc__sub span {
+    display: inline-block;
+    white-space: pre;
 }
 
 .banner1__bg img {

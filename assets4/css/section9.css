@@ -21,7 +21,7 @@
     background-image: url(../img/눈-min.gif);
     background-repeat: no-repeat;
     background-size: contain;
-    left: 33vw;
+    left: 34vw;
     top: -16vw;
     padding: 16vw;
     z-index: 10;
@@ -30,10 +30,15 @@
 .banner2__desc {
     position: relative;
     font-size: 13vw;
-    font-family: "OKChan";
     color: #fff;
+    -webkit-text-stroke: 0.1vw solid #000;
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
+}
+
+.banner2__desc span {
+    display: inline-block;
+    font-family: "OKChan";
 }
 
 .banner2__wrap .banner2__desc__sub {
@@ -43,6 +48,11 @@
     right: 9vw;
     top: -2vw;
     font-size: 1vw;
+}
+
+.banner2__desc__sub span {
+    display: inline-block;
+    white-space: pre;
 }
 
 .banner2__bg img {
@@ -60,8 +70,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 20;
-    top: 75%;
-    left: 52%;
+    top: 27vw;
+    left: 50vw;
     transform: translate(-50%, -50%);
 }
 

@@ -11,11 +11,11 @@
     grid-gap: 1vw;
 }
 
-.section3__box1 {
+#section3__box1 {
     grid-area: section3__box1;
     border: 0.3vw solid #000;
     border-radius: 1vw;
-    background-image: url(../img/section3bg.png);
+    background-image: url("https://github.com/thdtjdgml415/portpolio/blob/master/assets3/img/section3bg3.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,20 +23,20 @@
     overflow: hidden;
 }
 
-.section3__box1 .section3__myphoto {
-    background-image: url(../img/myphoto2-min.png);
+#section3__myphoto {
+    background-image: url('https://github.com/thdtjdgml415/portpoliohtml/blob/master/assets3/img/myphoto2-min.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 20vw;
     height: 28vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 16vw;
+    left: 25vw;
     transform: translate(-50%, -50%);
 }
 
-.section3__box1 .section3__button {
+#section3__box1 .section3__button {
     position: absolute;
     padding: 1.5vw 5vw;
     font-size: 4vw;
@@ -188,5 +188,19 @@ button.section3__box2__button:active::before {
         grid-template-columns: 96vw 96vw 96vw !important;
         grid-template-rows: 27.084vw 9.17vw 27.084vw;
         grid-gap: 3vw;
+    }
+
+    .section3__box3 .section__right__img2 {
+        left: 30vw;
+        top: -20vw;
+    }
+
+    .svg_bg {
+        top: 120vw;
+    }
+
+    #section3__myphoto {
+        left: 53vw;
+        top: 12vw;
     }
 }

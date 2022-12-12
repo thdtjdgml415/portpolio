@@ -106,7 +106,8 @@
     left: 0;
     bottom: -40vw;
     z-index: 40;
-    display: none;
+    transform: translateY(50vw);
+
 }
 
 
@@ -176,6 +177,10 @@
         top: 40vw;
         width: 50vw;
         height: 50vw;
+    }
+
+    .svg_bg {
+        top: 120vw;
     }
 }
 

@@ -1,5 +1,4 @@
 #section1 {
-    width: 96vw;
     display: inline-block;
 }
 
@@ -15,8 +14,9 @@
     overflow: hidden;
     display: inline-block;
     text-align: center;
-    width: 0;
     opacity: 0;
+    width: 96vw;
+
 }
 
 .section1__box__inner {
