@@ -41,7 +41,6 @@
     border: 0;
     vertical-align: middle;
     text-decoration: none;
-
 }
 
 button.search__desc .desc {
@@ -258,3 +257,33 @@ button.search__desc:active:before {
 }
 
 /* /section10 */
+
+@media (max-width: 486px) {
+
+    .game__wrap {
+        display: grid;
+        grid-template-areas:
+            "search__game"
+            "game__label"
+            "section10__game"
+            "label2__game";
+        grid-template-columns: 96vw;
+        grid-template-rows: 20vw 7.14vw 41.5vw 7.14vw;
+
+        margin: 1vw 2vw 0vw 2vw;
+    }
+
+    .section10__game {
+        display: grid;
+        grid-template-areas:
+            "tetris__game"
+            "card__game"
+        ;
+        grid-template-columns: 96vw;
+        grid-template-rows: 20vw 20vw;
+        justify-content: space-between;
+        overflow: hidden;
+        align-content: space-around;
+        gap: 0.6vw;
+    }
+}
