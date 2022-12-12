@@ -394,12 +394,11 @@
             "section5__box2"
             "section5__box3"
         ;
-        grid-template-columns: 26.15vw;
-        grid-template-rows: 30.31vw;
-        justify-content: space-evenly;
-        gap: 2vw;
+        grid-template-columns: 56.15vw;
+        grid-template-rows: 60.31vw;
     }
 
+    /* box1 */
     .section5__box1 {
         grid-area: section5__box1;
         display: grid;
@@ -407,14 +406,20 @@
             "section5__box1__top"
             "section5__box1__bottom"
         ;
-        grid-template-columns: 23.15vw;
-        grid-template-rows: 20vw 10vw;
-        justify-content: center;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 25vw;
         border-radius: 1vw;
         z-index: 10;
         position: relative;
+        margin-bottom: 10vw;
     }
 
+    .section5__box1__top__img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    /* box2 */
     .section5__box2 {
         grid-area: section5__box2;
         display: grid;
@@ -422,14 +427,20 @@
             "section5__box2__top"
             "section5__box2__bottom"
         ;
-        grid-template-columns: 23.15vw;
-        grid-template-rows: 20vw 10vw;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 25vw;
         justify-content: center;
         border-radius: 1vw;
         z-index: 10;
         position: relative;
     }
 
+    .section5__box2__top__img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    /* boxe3 */
     .section5__box3 {
         grid-area: section5__box3;
         display: grid;
@@ -437,12 +448,17 @@
             "section5__box3__top"
             "section5__box3__bottom"
         ;
-        grid-template-columns: 23.15vw;
-        grid-template-rows: 20vw 10vw;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 25vw;
         justify-content: center;
         border-radius: 1vw;
         z-index: 10;
         position: relative;
+    }
+
+    .section5__box3__top__img {
+        width: 35vw;
+        height: 35vw;
     }
 
     .section5__moneys img {
