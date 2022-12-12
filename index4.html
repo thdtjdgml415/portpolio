@@ -1066,9 +1066,9 @@
             gsap.set("#section5", {x:-2000})
             gsap.set("#section5 h2 span", {y:-500})
             gsap.set(".section5__desc__sub", {y:-500})
-            gsap.set(".section5__box1", {opacity:0})
+            gsap.set(".section5__box1", {x:-200,opacity:0})
             gsap.set(".section5__box2", {opacity:0})
-            gsap.set(".section5__box3", {opacity:0})
+            gsap.set(".section5__box3", {x:200,opacity:0})
 
             gsap.to("#section5", {
                 x:0,
@@ -1108,7 +1108,7 @@
             })
 
             gsap.to(".section5__box2", {
-   
+                x:0,
                 delay: 1.5,
                 duration:1.5,
                 opacity:1,
@@ -1121,7 +1121,7 @@
             })
 
             gsap.to(".section5__box1", {
-     
+                x:0,
                 delay: 2,
                 duration:1.5,
                 opacity:1,

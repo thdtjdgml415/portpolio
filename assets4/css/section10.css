@@ -2,6 +2,7 @@
 #section10 {
     width: 96vw;
     margin: 1vw 2vw;
+    overflow: hidden;
 }
 
 .game__wrap {
@@ -153,6 +154,7 @@ button.search__desc:active:before {
     grid-template-columns: 47.5vw 47.5vw;
     grid-template-rows: 20vw;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .game__wrap .tetris__game {
