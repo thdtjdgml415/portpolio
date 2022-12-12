@@ -331,3 +331,107 @@
     z-index: 20;
     width: 100%;
 }
+
+@media (max-width: 486px) {
+    .section6__wrap {
+        display: grid;
+        grid-template-areas:
+            "section6__box1"
+            "section6__box2"
+            "section6__box3"
+        ;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 50.31vw 50.31vw 50.31vw;
+        gap: 3vw;
+    }
+
+
+    #section6 .section6__bg {
+        background-image: url(../img/circle.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -152vw;
+        top: -65vw;
+        width: 300vw;
+        height: 300vw;
+        z-index: 0;
+        animation: spin 60s infinite linear;
+    }
+
+    /* box1 */
+    .section6__box1 {
+        grid-area: section6__box1;
+        display: grid;
+        grid-template-areas:
+            "section6__box1__top"
+            "section6__box1__bottom"
+        ;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 10vw;
+        border-radius: 1vw;
+        z-index: 10;
+        position: relative;
+    }
+
+    .section6__box1__top__img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    /* box2 */
+    .section6__box2 {
+        grid-area: section6__box2;
+        display: grid;
+        grid-template-areas:
+            "section6__box2__top"
+            "section6__box2__bottom"
+        ;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 10vw;
+        justify-content: center;
+        border-radius: 1vw;
+        z-index: 10;
+        position: relative;
+    }
+
+    .section6__box2__top__img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    /* box3 */
+    .section6__box3 {
+        grid-area: section6__box3;
+        display: grid;
+        grid-template-areas:
+            "section6__box3__top"
+            "section6__box3__bottom"
+        ;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 40vw 10vw;
+        justify-content: center;
+        border-radius: 1vw;
+        z-index: 10;
+        position: relative;
+    }
+
+    .section6__box3__top__img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .section6__moneys img {
+        display: none;
+    }
+
+    .section6__box1 .section6__box1__bottom {
+        padding: 0vw !important;
+    }
+
+    .section6__box3 .section6__box3__bottom {
+        padding: 0vw;
+    }
+
+}

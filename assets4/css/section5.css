@@ -399,6 +399,21 @@
         gap: 3vw;
     }
 
+
+    #section5 .section5__bg {
+        background-image: url(../img/circle.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -52vw;
+        top: -65vw;
+        width: 300vw;
+        height: 300vw;
+        z-index: 0;
+        animation: spin 60s infinite linear;
+    }
+
     /* box1 */
     .section5__box1 {
         grid-area: section5__box1;

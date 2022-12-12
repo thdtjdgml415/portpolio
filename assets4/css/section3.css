@@ -187,7 +187,9 @@ button.section3__box2__button:active::before {
         grid-template-columns: 96vw 96vw 96vw !important;
         grid-template-rows: 27.084vw 9.17vw 27.084vw;
         grid-gap: 3vw;
+        margin-bottom: 8vw;
     }
+
 
     .section3__box3 .section__right__img2 {
         left: 30vw;
