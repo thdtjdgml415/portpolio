@@ -17,9 +17,9 @@
         <main id="main">
         <header id="header">
             <div class="header__wrap">
-            <div class="header__left"><a href="/">처음으로</a></div>
+            <div class="header__left"><a href="#section1">처음으로</a></div>
             <h1>포트폴리오</h1>
-            <div class="header__right"><a href="/">마지막으로</a></div>
+            <div class="header__right"><a href="#section7">마지막으로</a></div>
             </div>
         </header>
         <section id="section1">
@@ -118,7 +118,7 @@
                             <p class="section5-1__touch">클릭</p>
                         </div>
                         <div class="section5__box1__top">
-                            <div class="section5__box1__top__img"></div>
+                           <a href="https://thdtjdgml415.github.io/codingclass/site2/webd/index3.html"><div class="section5__box1__top__img"></div></a>
                         </div>
                         <div class="section5__box1__bottom">
                             웹 표준을 준수해서 사이트 만들었습니다.
@@ -131,7 +131,7 @@
                             <p class="section5-2__touch">클릭</p>
                         </div>
                         <div class="section5__box2__top">
-                            <div class="section5__box2__top__img"></div>
+                            <a href="https://thdtjdgml415.github.io/codingclass/site/site1/index.html"><div class="section5__box2__top__img"></div></a>
                         </div>
                         <div class="section5__box2__bottom">
                             반응형 사이트를 만들어 보았습니다.
@@ -144,7 +144,7 @@
                             <p class="section5-3__touch">클릭</p>
                         </div>
                         <div class="section5__box3__top">
-                            <div class="section5__box3__top__img"></div>
+                            <a href="https://thdtjdgml415.github.io/codingclass/site2/webd/index2.html"><div class="section5__box3__top__img"></div></a>
                         </div>
                         <div class="section5__box3__bottom">
                             슬라이드, 탭메뉴를 만들어 적용하였습니다.
@@ -169,7 +169,7 @@
                             <p class="section6-1__touch">클릭</p>
                         </div>
                         <div class="section6__box1__top">
-                            <a href="/"><div class="section6__box1__top__img"></div></a>
+                            <a href="http://thdtjdgml415.dothome.co.kr/"><div class="section6__box1__top__img"></div></a>
                         </div>
                         <div class="section6__box1__bottom">
                             이미지 다운로드 사이트를 만들어 보았습니다.
@@ -182,7 +182,7 @@
                             <p class="section6-2__touch">클릭</p>
                         </div>
                         <div class="section6__box2__top">
-                            <div class="section6__box2__top__img"></div>
+                            <a href="http://songdh124.dothome.co.kr/codingclass/phpclass/"><div class="section6__box2__top__img"></div></a>
                         </div>
                         <div class="section6__box2__bottom">
                             php를 이용하여 사이트를 만들어보았습니다.
@@ -212,11 +212,11 @@
                 <div class="section7__wrap">
                     <div class="section7__box1">
                         <div class="section7-1__click">
-                            <img src="./assets4/img/hand.gif" alt="" />
+                            <img src="./assets4/img/hand.gif" alt="click" />
                             <p class="section7-1__touch">클릭</p>
                         </div>
                         <div class="section7__box1__top">
-                            <div class="section7__box1__top__img"></div>
+                            <a href=""><div class="section7__box1__top__img"></div></a>
                         </div>
                         <div class="section7__box1__bottom">
                             반응형 사이트를 
@@ -226,7 +226,7 @@
                     <!-- box1 -->
                     <div class="section7__box2">
                         <div class="section7-2__click">
-                            <img src="./assets4/img/hand.gif" alt="" />
+                            <img src="./assets4/img/hand.gif" alt="click" />
                             <p class="section7-2__touch">클릭</p>
                         </div>
                         <div class="section7__box2__top">
@@ -240,7 +240,7 @@
                     <!-- box2 -->
                     <div class="section7__box3">
                         <div class="section7-3__click">
-                            <img src="./assets4/img/hand.gif" alt="" />
+                            <img src="./assets4/img/hand.gif" alt="click" />
                             <p class="section7-3__touch">클릭</p>
                         </div>
                         <div class="section7__box3__top">
@@ -253,7 +253,7 @@
                     </div>
                     <!-- box3 -->
                     <div class="section7__moneys">
-                        <img src="./assets2/img/moneyS.png" alt="돈배경" />
+                        <img src="./assets4/img/moneyS-min.png" alt="돈배경" />
                     </div>
                 </div>
             </section>
@@ -326,7 +326,7 @@
               <section id="section10">
                 <div class="game__wrap">
                     <div class="search__game">
-                        <a href=""><button class="search__desc"><div class="desc">서치게임</div></button></a>
+                        <button class="search__desc"><div class="desc">서치게임</div></button>
                     </div>
                     <div class="game__label">
                         <div class="desc split10">
@@ -394,7 +394,9 @@
                   <div class="banner3__bg">
                     <img src="./assets2/img/banner4.png" alt="배너" />
                   </div>
-                  <div class="banner3__desc">준비된 개발자</div>
+                  <div class="banner3__desc">
+                    <div class="desc split12">준비된 개발자</div>
+                  </div>
                   <div class="banner3__desc__sub">
                     항상 준비되어 있습니다. <br />
                     연락주세요!
@@ -640,12 +642,17 @@
             // splitTextWrap10 = "<span>" + splitTextWrap10 + "</span>";
             // text10.innerHTML = splitTextWrap10
            
+             //section12__sub
+            let text12 = document.querySelector('.split12');
+            let splitTextWrap12 = text12.innerText.split('').join('</span><span>');
+            splitTextWrap12 = "<span>" + splitTextWrap12 + "</span>";
+            text12.innerHTML = splitTextWrap12
            
             // smooth
             gsap.registerPlugin(ScrollTrigger);
 
             const lenis = new Lenis({
-            duration: 1,
+            duration: 2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -5 * t)), // https://www.desmos.com/calculator/brs54l4xou
             });
 
@@ -660,6 +667,18 @@
             }
 
             requestAnimationFrame(raf);
+
+            // const lenis = new Lenis({
+            //     duration: 2.5,
+            //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            //     direction: 'vertical', // vertical, horizontal
+            //     gestureDirection: 'vertical', // vertical, horizontal, both
+            //     smooth: true,
+            //     mouseMultiplier: 1,
+            //     smoothTouch: true,
+            //     touchMultiplier: 10,
+            //     infinite: false,
+            // });
 
             // section3
             var images = [
@@ -1676,9 +1695,82 @@
             // /section10
         </script>
         <script>
+            // section12
+            gsap.set(".banner3__wrap", {x:-2000, opacity:0,})
+            gsap.set(".banner3__eye", {y:-200, opacity:0,})
+            gsap.set(".banner3__desc .desc span", {y:-2000, opacity:0,})
+            gsap.set(".banner3__img", { opacity:0, scale:1.5})
+            gsap.to(".banner3__wrap", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".banner3__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".banner3__wrap", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".banner3__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".banner3__eye", {
+                y:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay: .5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".banner3__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".banner3__desc .desc span", {
+                y:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay: 1,
+                stagger:0.02,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".banner3__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".banner3__img", {
+   
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1.5,
+                scale:1,
+                delay: 1.5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".banner3__wrap",
+                    // markers: true
+                }
+            })
+
+
+            // /section12
+        </script>
+        <script>
             // section14               
             gsap.to(".left__about", {
-              
             x: 0,
             y: 0,
             duration: 0.1,
@@ -1698,8 +1790,8 @@
             duration: 0.1,
             scrollTrigger: {
                 trigger: ".left__study",
-                // start: "top 0%",
-                // end: "+=1100",
+                start: "top 0%",
+                end: "+=1100",
                 pin: true,
                 scrub: 3,
                 //markers: true,

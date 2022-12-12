@@ -14,7 +14,6 @@
     overflow: hidden;
 }
 
-
 .banner3__eye {
     position: absolute;
     background-image: url(../img/눈-min.gif);
@@ -29,11 +28,16 @@
 .banner3__desc {
     position: relative;
     font-size: 12.5vw;
+}
+
+.banner3__desc .desc span {
     font-family: "OKChan";
     color: #fff;
     -webkit-text-stroke: 0.1vw #000;
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
+    display: inline-block;
+    white-space: pre;
 }
 
 .banner3__wrap .banner3__desc__sub {
