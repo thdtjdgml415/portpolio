@@ -12,6 +12,7 @@
     grid-template-rows: 20.5vw;
 
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .section11__wrap .parallax__effect {

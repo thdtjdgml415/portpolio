@@ -107,18 +107,14 @@
 @media (max-width: 760px) {}
 
 @media (max-width: 486px) {
-    .section13__about {
-        display: inline-block;
-    }
+    .section13__about {}
 
     .section13__about .right__about {
         width: 100%;
         font-size: 4vw;
     }
 
-    .section13__study {
-        display: inline-block;
-    }
+    .section13__study {}
 
     .section13__study .right__study {
         width: 100%;
