@@ -118,10 +118,15 @@ button.search__desc:active:before {
     animation: section2rail 25s linear infinite;
 }
 
+.game__wrap .game__label .desc span {
+    display: inline-block;
+    white-space: pre;
+}
+
 .game__wrap .game__label .desc img {
     width: 7vw;
     position: relative;
-    top: -0.3vh;
+    top: -0.3vw;
     left: 0;
 }
 

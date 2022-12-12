@@ -107,7 +107,6 @@
     bottom: -40vw;
     z-index: 40;
     transform: translateY(50vw);
-
 }
 
 
@@ -179,9 +178,7 @@
         height: 50vw;
     }
 
-    .svg_bg {
-        top: 120vw;
-    }
+
 }
 
 /* section2 */

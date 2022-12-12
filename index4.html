@@ -329,7 +329,7 @@
                         <a href=""><button class="search__desc"><div class="desc">서치게임</div></button></a>
                     </div>
                     <div class="game__label">
-                        <div class="desc">
+                        <div class="desc split10">
                             제목을 누르면
                             <img src="./assets4/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
                             있습니다. 제목을 누르면
@@ -346,7 +346,7 @@
                     </div>
                     <div class="section10__game">
                         <div class="tetris__game"><div class="desc tetris">테트리스</div></div>
-                        <div class="card__game"><div class="desc ">서치게임</div></div>
+                        <div class="card__game"><div class="desc ">카드게임</div></div>
                     </div>
                     <div class="label2__game">
                         <div class="desc">
@@ -564,6 +564,16 @@
                 </div>
               </section>
               <!-- section13 -->
+              <footer id="footer">
+                <div class="footer__inner">
+                  <div class="footer__desc">Thank you</div>
+                  <div class="footer__deco1"></div>
+                  <div class="footer__deco2"></div>
+                  <div class="footer__deco3"></div>
+                  <div class="footer__deco4"></div>
+                  <div class="footer__deco5"></div>
+                </div>
+              </footer>
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -623,8 +633,15 @@
             let splitTextWrap9 = text9.innerText.split('').join('</span><span>');
             splitTextWrap9 = "<span>" + splitTextWrap9 + "</span>";
             text9.innerHTML = splitTextWrap9
-            // smooth
 
+            //section10__label
+            // let text10 = document.querySelector('.split10');
+            // let splitTextWrap10 = text10.innerText.split('').join('</span><span>');
+            // splitTextWrap10 = "<span>" + splitTextWrap10 + "</span>";
+            // text10.innerHTML = splitTextWrap10
+           
+           
+            // smooth
             gsap.registerPlugin(ScrollTrigger);
 
             const lenis = new Lenis({
@@ -678,6 +695,7 @@
         gsap.set(".section2__img1", { opacity: 0, y:-500})
         gsap.set(".section2__img2", { opacity: 0, y:-500})
         gsap.set(".section2__img3", { opacity: 0, y:-500})
+        gsap.set(".section2__bottom", { opacity: 1, y:-10})
 
         gsap.to(".header__wrap h1", { duration: 0.5, ease: Bounce.easeOut, y: 0, delay:1 });
         gsap.to(".header__wrap .header__left", {
@@ -781,29 +799,28 @@
                 // markers: true 
             },
         })
-        gsap.to(".section2__bottom",{
-            y:-70,
-            duration:.5,
-            ease: "elastic.out(1, 0.3)",
-            scrollTrigger: {
-                trigger: "#section2",
-                start: "top 0%",
-                // markers: true 
-            },
-        }) 
+        // gsap.to(".section2__bottom",{
+        //     y:-70,
+        //     duration:.5,
+        //     ease: "elastic.out(1, 0.3)",
+        //     scrollTrigger: {
+        //         trigger: "#section2",
+        //         start: "top 0%",
+        //         // markers: true 
+        //     },
+        // }) 
 
         //money
-        // gsap.to(".section2__bottom", {
-        // x: 0,
-        // y: -400,
-        // scrollTrigger: {
-        //     trigger: ".#section2",
-        //     start: "top 0%",
-        //     end: " bottom 0%",
-        //     scrub: 2.5,
-        //         markers: true
-        //     },
-        // });
+        gsap.to(".section2__bottom", {
+        x: 0,
+        y: -300,
+        scrollTrigger: {
+            trigger: "#section2",
+            start: "top 30%",
+            scrub: 2,
+                markers: true
+            },
+        });
         </script>
 
         <script>
@@ -1010,7 +1027,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1023,7 +1040,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1036,7 +1053,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1049,7 +1066,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1062,7 +1079,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1075,7 +1092,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
             gsap.from(".section5__moneys img", {
@@ -1084,7 +1101,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1095,7 +1112,7 @@
                     start: "top 50%",
                     trigger: "#section5",
                     scrub:2,
-                    markers: true
+                    // markers: true
                 }
             })
             // section5
@@ -1116,7 +1133,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1129,7 +1146,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1142,7 +1159,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1155,7 +1172,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1168,7 +1185,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1181,7 +1198,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
             gsap.from(".section6__moneys img", {
@@ -1190,7 +1207,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1201,7 +1218,7 @@
                     start: "top 50%",
                     trigger: "#section6",
                     scrub:2,
-                    markers: true
+                    // markers: true
                 }
             })
             // /section6
@@ -1222,7 +1239,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1235,7 +1252,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1248,7 +1265,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1261,7 +1278,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1274,7 +1291,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1287,16 +1304,17 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
+
             gsap.from(".section7__moneys img", {
                 y:200,
                 duration:1.5,
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section7",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1307,7 +1325,7 @@
                     start: "top 50%",
                     trigger: "#section7",
                     scrub:2,
-                    markers: true
+                    // markers: true
                 }
             })
             // /section7
@@ -1328,7 +1346,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1341,7 +1359,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1354,7 +1372,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1367,7 +1385,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1380,7 +1398,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1393,7 +1411,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
             gsap.from(".section8__moneys img", {
@@ -1402,7 +1420,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section8",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1413,7 +1431,7 @@
                     start: "top 50%",
                     trigger: "#section8",
                     scrub:2,
-                    markers: true
+                    // markers: true
                 }
             })
             // /section8
@@ -1425,6 +1443,9 @@
             gsap.set(".banner2__desc span", {opacity:0,y:-200})
             gsap.set(".banner2__desc__sub span", {opacity:0,y:-200})
             gsap.set(".banner2__img", {opacity:0, scale:1.5})
+            gsap.set(".game__wrap .tetris__game", {x:-2000 ,opacity:0})
+            gsap.set(".game__wrap .card__game", {x:-2000 ,opacity:0})
+            gsap.set(".game__wrap .label2__game", {x:-2000 ,opacity:0})
 
             gsap.to(".banner2__wrap", {
                 x:0,
@@ -1433,7 +1454,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".banner2__wrap",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1446,7 +1467,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".banner2__wrap",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1460,7 +1481,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".banner2__wrap",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1474,7 +1495,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".banner2__wrap",
-                    markers: true
+                    // markers: true
                 }
             })
 
@@ -1488,7 +1509,7 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".banner2__wrap",
-                    markers: true
+                    // markers: true
                 }
             })
             // /section9
@@ -1496,6 +1517,12 @@
         <script>
             // section10
             gsap.set(".search__game", {x:-2000})
+            gsap.set(".game__label", {x:-2000})
+            gsap.set(".section11__wrap .parallax__effect", {x:-2000 ,opacity:0})
+            gsap.set(".section11__wrap .game__effect", {x:-2000 ,opacity:0})
+            gsap.set(".section11__wrap .quiz__effect", {x:-2000 ,opacity:0})
+            gsap.set(".section11__wrap .mouse__effect", {x:-2000 ,opacity:0})
+            gsap.set(".section11__wrap .slider__effect", {x:-2000 ,opacity:0})
 
             gsap.to(".search__game", {
                 x:0,
@@ -1504,10 +1531,180 @@
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".game__wrap",
-                    markers: true
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__label", {
+                x:0,
+                ease: Bounce.easeOut,
+                duration:1,
+                delay:1,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__label .desc", {
+                x:0,
+                ease: Bounce.easeOut,
+                duration:1,
+                delay:1,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__label .desc", {
+                x:0,
+                ease: Bounce.easeOut,
+                duration:1,
+                delay:1,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__wrap .tetris__game", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:1.5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__wrap .card__game", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:2,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".game__wrap .label2__game", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:2.5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".parallax__effect", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:3,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+            gsap.to(".game__effect", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:3.5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".quiz__effect", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:4,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+          
+            gsap.to(".mouse__effect", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:4.5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".slider__effect", {
+                x:0,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:5,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
                 }
             })
             // /section10
+        </script>
+        <script>
+            // section14               
+            gsap.to(".left__about", {
+              
+            x: 0,
+            y: 0,
+            duration: 0.1,
+            scrollTrigger: {
+                trigger: ".left__about",
+                start: "top 0%",
+                end: "+=400",
+                pin: true,
+                scrub: 3,
+                //markers: true,
+                },
+            });
+            gsap.to(".left__study", {
+            
+            x: 0,
+            y: 0,
+            duration: 0.1,
+            scrollTrigger: {
+                trigger: ".left__study",
+                // start: "top 0%",
+                // end: "+=1100",
+                pin: true,
+                scrub: 3,
+                //markers: true,
+                },
+            }); 
         </script>
     </body>
     </html>

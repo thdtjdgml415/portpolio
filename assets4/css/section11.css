@@ -12,7 +12,6 @@
     grid-template-rows: 20.5vw;
 
     justify-content: space-between;
-
 }
 
 .section11__wrap .parallax__effect {
@@ -144,6 +143,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    display: inline-block;
 }
 
 .section11__wrap .slider__effect a {
@@ -170,6 +170,56 @@
     text-align: center;
     position: relative;
     top: 16vw;
+    right: -3vw;
     color: #fff;
     text-shadow: 0.2vw 0.2vw #000;
+    display: inline-block;
+}
+
+@media (max-width: 486px) {
+    .section11__wrap {
+        display: grid;
+        grid-template-areas:
+            "parallax__effect "
+            " game__effect "
+            "quiz__effect "
+            " mouse__effect "
+            "slider__effect"
+        ;
+        grid-template-columns: 96vw;
+        grid-template-rows: 20.5vw 20.5vw 20.5vw 20.5vw 20.5vw;
+        gap: 2vw;
+        justify-content: space-between;
+    }
+
+    .section11__wrap .parallax__effect a {
+        top: 50%;
+        left: 20%;
+    }
+
+    .section11__wrap .game__effect a {
+        top: 50%;
+        left: 20%;
+    }
+
+    .section11__wrap .quiz__effect a {
+        top: 50%;
+        left: 20%;
+    }
+
+    .section11__wrap .slider__effect a {
+        top: 50%;
+        left: 20%;
+    }
+
+    .section11__wrap .mouse__effect a {
+        top: 50%;
+        left: 20%;
+    }
+
+    .section11__wrap .section11_desc {
+        font-size: 6vw;
+        top: 6vw;
+        right: -30vw;
+    }
 }
