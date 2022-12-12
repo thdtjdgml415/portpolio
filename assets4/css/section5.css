@@ -394,8 +394,9 @@
             "section5__box2"
             "section5__box3"
         ;
-        grid-template-columns: 56.15vw;
-        grid-template-rows: 60.31vw;
+        grid-template-columns: 43.15vw;
+        grid-template-rows: 50.31vw 50.31vw 50.31vw;
+        gap: 3vw;
     }
 
     /* box1 */
@@ -407,11 +408,10 @@
             "section5__box1__bottom"
         ;
         grid-template-columns: 43.15vw;
-        grid-template-rows: 40vw 25vw;
+        grid-template-rows: 40vw 10vw;
         border-radius: 1vw;
         z-index: 10;
         position: relative;
-        margin-bottom: 10vw;
     }
 
     .section5__box1__top__img {
@@ -428,7 +428,7 @@
             "section5__box2__bottom"
         ;
         grid-template-columns: 43.15vw;
-        grid-template-rows: 40vw 25vw;
+        grid-template-rows: 40vw 10vw;
         justify-content: center;
         border-radius: 1vw;
         z-index: 10;
@@ -449,7 +449,7 @@
             "section5__box3__bottom"
         ;
         grid-template-columns: 43.15vw;
-        grid-template-rows: 40vw 25vw;
+        grid-template-rows: 40vw 10vw;
         justify-content: center;
         border-radius: 1vw;
         z-index: 10;
