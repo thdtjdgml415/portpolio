@@ -98,3 +98,26 @@
 .mt70 {
   margin-top: 70px !important;
 }
+
+.cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  border-radius: 50%;
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cursor.active {
+  background-image: url(../img/myphoto.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  scale: 1.5;
+  transition: all 1;
+}

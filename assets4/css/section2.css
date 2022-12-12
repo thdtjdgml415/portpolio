@@ -38,7 +38,8 @@
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     position: relative;
     z-index: 40;
-    padding-bottom: 6vw
+    padding-bottom: 6vw;
+    display: inline-block;
 }
 
 
@@ -105,7 +106,7 @@
     position: absolute;
     left: 0;
     bottom: -40vw;
-    z-index: 40;
+    z-index: 10;
     transform: translateY(50vw);
 }
 

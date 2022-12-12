@@ -11,10 +11,12 @@
         @import url("https://webfontworld.github.io/cookierun/CookieRun.css");
         @import url("https://webfontworld.github.io/Poppins/Poppins.css");
         @import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+
         </style>
     </head>
     <body>
         <main id="main">
+            <div class="cursor"></div>
         <header id="header">
             <div class="header__wrap">
             <div class="header__left"><a href="#section1">처음으로</a></div>
@@ -65,9 +67,11 @@
                 <div class="section2__box__inner">
                     <div class="section2__desc">MY PORT</div>
                     <div class="section2__desc__sub">포폴</div>
-                    <div class="section2__img1"></div>
-                    <div class="section2__img2"></div>
-                    <div class="section2__img3"></div>
+                    <div class="section2imgWrap">
+                        <div class="section2__img1"></div>
+                        <div class="section2__img2"></div>
+                        <div class="section2__img3"></div>
+                    </div>
                 </div>
                 <div class="section2__bottom">
                     <img src="./assets2/img/moneyS.png" alt="돈배경" />
@@ -433,6 +437,13 @@
                       </div>
                       <ul>
                         <li>
+                            <a class="study" href="http://songdh124.dothome.co.kr/">MAIN</a>
+                            ..............................................................................<a
+                              href="/"
+                              >클릭</a
+                            >
+                          </li>
+                        <li>
                           <a class="study" href="/">자바스크립트 마우스 이펙트</a>
                           ..............................................................................<a
                             href="/"
@@ -582,6 +593,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
         <script>
+            const cursor = document.querySelector(".cursor")
+            const section2img = document.querySelectorAll(".section2imgWrap > div")
+            // const section2img2 = document.querySelector(".section2__img2")
+            // const section2img3 = document.querySelector(".section2__img3")
+            window.addEventListener("mousemove", (e) => {
+                    //GSAP
+                    gsap.to(cursor, { duration: 0.3, left: e.pageX - 50, top: e.pageY - 50 });
+                   
+                    section2img.forEach((enter) => {
+                        enter.addEventListener("mouseenter", () => {
+                            cursor.classList.add("active")
+                        })
+                        enter.addEventListener("mouseleave", () => {
+                            cursor.classList.remove("active")
+                        })
+                    })
+            })
+
+
             // 글씨 쪼개기
             let text = document.querySelector('.split');
             let splitTextWrap = text.innerText.split('').join('</span><span>');
