@@ -3,7 +3,7 @@
     margin: 1vw 2vw 10vw 2vw;
     font-family: 'Poppins';
     background: #FFF271;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     padding: 2.5vw 3.1vw;
 }
@@ -38,8 +38,6 @@
     font-size: 5.5vw;
     font-weight: 900;
     font-family: 'Poppins';
-    line-height: 1.6;
-
 }
 
 .section13__study .right__study {

@@ -13,16 +13,16 @@
         "label2__game"
     ;
     grid-template-columns: 96vw;
-    grid-template-rows: 20vw 6.14vw 20vw 6.14vw;
-    grid-gap: 1vw;
-    margin: 1vw 2vw;
+    grid-template-rows: 20vw 7.14vw 20vw 7.14vw;
+    grid-gap: 0.6vw;
+    margin: 1vw 2vw 0vw 2vw;
     justify-content: space-evenly;
 
 }
 
 .game__wrap .search__game {
     grid-area: search__game;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/lambo-jump.gif);
     background-size: cover;
@@ -49,13 +49,12 @@ button.search__desc .desc {
     top: -10vw;
     font-size: 8vw;
     font-family: "OKChan";
-    color: #FFEB26;
+    color: #fff;
     -webkit-text-stroke: 0.1vw #000;
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
 
 button.search__desc {
-    color: #382b22;
     text-transform: uppercase;
     padding: 3.5vw 4vw 3.5vw 4vw;
     background: #FFEB26;
@@ -76,7 +75,7 @@ button.search__desc::before {
     bottom: 0;
     background: #FFEB26;
     border-radius: inherit;
-    box-shadow: 0 0 0 2px #000, 0 0.625em 0 0 #FFEB26;
+    box-shadow: 0 0 0 2px #000, 0 0 0 0 #ffeb26;
     transform: translate3d(0, 0.75em, -1em);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
@@ -87,7 +86,6 @@ button.search__desc:hover {
 }
 
 button.search__desc:hover::before {
-    box-shadow: 0 0 0 2px #000, 0 0.5em 0 0 #FFEB26;
     transform: translate3d(0, 0.5em, -1em);
 }
 
@@ -103,18 +101,25 @@ button.search__desc:active:before {
 
 .game__wrap .game__label {
     grid-area: game__label;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     overflow: hidden;
     background-color: #C58AF3;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+    padding: 1.5vw 2vw;
 }
 
 .game__wrap .game__label .desc {
     font-size: 3vw;
     padding: 0.4vw;
+    margin: 1vw 2vw;
     color: #fff;
     text-shadow: .2vw .2vw #000;
     white-space: nowrap;
+    position: relative;
+    top: -1.9vw;
+    left: 0;
     animation: section2rail 25s linear infinite;
 }
 
@@ -152,7 +157,7 @@ button.search__desc:active:before {
 
 .game__wrap .tetris__game {
     grid-area: tetris__game;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/tetris-min.png);
     display: grid;
@@ -189,7 +194,7 @@ button.search__desc:active:before {
 
 .game__wrap .card__game {
     grid-area: card__game;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/cardgame-min.png);
     background-size: cover;
@@ -225,19 +230,22 @@ button.search__desc:active:before {
 
 .game__wrap .label2__game {
     grid-area: label2__game;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     overflow: hidden;
     background-color: #C58AF3;
+
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
 }
 
 .game__wrap .label2__game .desc {
     color: #fff;
     text-shadow: .2vw .2vw #000;
     font-size: 3vw;
-    padding: 0.4vw;
     white-space: nowrap;
     animation: section2rail 25s linear infinite;
+    padding: 0.9vw 2vw;
 }
 
 .game__wrap .label2__game .desc img {

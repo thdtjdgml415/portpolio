@@ -1,6 +1,6 @@
 #section11 {
     width: 96vw;
-    margin: 1vw 2vw 4vw 2vw;
+    margin: -.4vw 2vw 4vw 2vw;
 }
 
 .section11__wrap {
@@ -8,7 +8,7 @@
     grid-template-areas:
         "parallax__effect game__effect quiz__effect mouse__effect slider__effect"
     ;
-    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+    grid-template-columns: 18.65vw 18.65vw 18.65vw 18.65vw 18.65vw;
     grid-template-rows: 20.5vw;
 
     justify-content: space-between;
@@ -16,7 +16,7 @@
 
 .section11__wrap .parallax__effect {
     grid-area: parallax__effect;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/section12bg1-min.png);
     background-size: cover;
@@ -46,7 +46,7 @@
 
 .section11__wrap .game__effect {
     grid-area: game__effect;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/section12bg2-min.png);
     background-size: cover;
@@ -76,7 +76,7 @@
 
 .section11__wrap .quiz__effect {
     grid-area: quiz__effect;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/section12bg3-min.png);
     background-size: cover;
@@ -106,7 +106,7 @@
 
 .section11__wrap .mouse__effect {
     grid-area: mouse__effect;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/section12bg4-min.png);
     background-size: cover;
@@ -136,7 +136,7 @@
 
 .section11__wrap .slider__effect {
     grid-area: slider__effect;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 1vw;
     background-image: url(../img/section12bg5-min.png);
     background-size: cover;
@@ -153,7 +153,7 @@
     transform: translate(-50%, -50%);
     padding: 5vw;
     background: #FF9CDD;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 50vw;
 }
 

@@ -15,7 +15,6 @@
     overflow: hidden;
 }
 
-
 .banner2__eye {
     position: absolute;
     background-image: url(../img/눈-min.gif);
@@ -31,14 +30,17 @@
     position: relative;
     font-size: 13vw;
     color: #fff;
-    -webkit-text-stroke: 0.1vw solid #000;
-    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     z-index: 10;
+    -webkit-text-stroke: 0.1vw solid #000;
+    display: inline-block;
 }
 
 .banner2__desc span {
     display: inline-block;
     font-family: "OKChan";
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    display: inline-block;
 }
 
 .banner2__wrap .banner2__desc__sub {
@@ -70,7 +72,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 20;
-    top: 27vw;
+    top: 26vw;
     left: 50vw;
     transform: translate(-50%, -50%);
 }

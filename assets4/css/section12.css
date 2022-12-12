@@ -5,7 +5,7 @@
 .banner3__wrap {
     width: 96vw;
     padding: 5vw 5vw;
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     margin: 2.5vw 2vw;
     border-radius: 1vw;
     text-align: center;
@@ -67,6 +67,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 0.3vw solid #000;
+    border: 0.4vw solid #000;
     border-radius: 50vw;
 }
