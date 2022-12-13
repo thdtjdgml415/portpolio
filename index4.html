@@ -1571,10 +1571,10 @@
             gsap.set(".search__game", {x:-2000})
             gsap.set(".game__label", {x:-2000})
             gsap.set(".section11__wrap .parallax__effect", {y:2000 ,opacity:0})
-            gsap.set(".section11__wrap .game__effect", {y:2000 ,opacity:0})
-            gsap.set(".section11__wrap .quiz__effect", {y:2000 ,opacity:0})
-            gsap.set(".section11__wrap .mouse__effect", {y:2000 ,opacity:0})
-            gsap.set(".section11__wrap .slider__effect", {y:2000 ,opacity:0})
+            gsap.set(".section11__wrap .game__effect", {y:2000 ,opacity:0 ,scale:1.5})
+            gsap.set(".section11__wrap .quiz__effect", {y:2000 ,opacity:0 ,scale:1.5})
+            gsap.set(".section11__wrap .mouse__effect", {y:2000 ,opacity:0 ,scale:1.5})
+            gsap.set(".section11__wrap .slider__effect", {y:2000 ,opacity:0 ,scale:1.5})
 
             gsap.to(".search__game", {
                 x:0,
@@ -1664,6 +1664,7 @@
 
             gsap.to(".parallax__effect", {
                 y:0,
+                scale:1,
                 ease: Bounce.easeOut,
                 opacity:1,
                 duration:1,
@@ -1676,6 +1677,35 @@
             })
             gsap.to(".game__effect", {
                 y:0,
+                scale:1,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:2.7,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+
+            gsap.to(".quiz__effect", {
+                y:0,
+                scale:1,
+                ease: Bounce.easeOut,
+                opacity:1,
+                duration:1,
+                delay:2.8,
+                scrollTrigger:{
+                    start: "top 50%",
+                    trigger: ".game__wrap",
+                    // markers: true
+                }
+            })
+          
+            gsap.to(".mouse__effect", {
+                y:0,
+                scale:1,
                 ease: Bounce.easeOut,
                 opacity:1,
                 duration:1,
@@ -1687,38 +1717,13 @@
                 }
             })
 
-            gsap.to(".quiz__effect", {
-                y:0,
-                ease: Bounce.easeOut,
-                opacity:1,
-                duration:1,
-                delay:3.2,
-                scrollTrigger:{
-                    start: "top 50%",
-                    trigger: ".game__wrap",
-                    // markers: true
-                }
-            })
-          
-            gsap.to(".mouse__effect", {
-                y:0,
-                ease: Bounce.easeOut,
-                opacity:1,
-                duration:1,
-                delay:3.5,
-                scrollTrigger:{
-                    start: "top 50%",
-                    trigger: ".game__wrap",
-                    // markers: true
-                }
-            })
-
             gsap.to(".slider__effect", {
                 y:0,
+                scale:1,
                 ease: Bounce.easeOut,
                 opacity:1,
                 duration:1,
-                delay:3.8,
+                delay:3,
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: ".game__wrap",
