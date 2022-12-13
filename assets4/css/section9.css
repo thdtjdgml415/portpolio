@@ -1,6 +1,7 @@
 /* section9 */
 #section9 {
     position: relative;
+    width: 96vw;
 }
 
 .banner2__wrap {
@@ -91,3 +92,4 @@
 }
 
 /*/ section9 */
+@media (max-width: 600px) {}

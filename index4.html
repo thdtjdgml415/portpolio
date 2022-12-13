@@ -82,7 +82,9 @@
             <section id="section3">
                 <div id="section3__box1">
                     <div id="section3__myphoto"></div>
-                    <div class="section3__button">성희</div>
+                    <button class="section3__button">
+                       <div class="desc">성희</div>
+                    </button>
                 </div>
                 <div class="section3__box2">
                     <button class="section3__box2__button">
@@ -333,7 +335,7 @@
                         <button class="search__desc"><div class="desc">서치게임</div></button>
                     </div>
                     <div class="game__label">
-                        <div class="desc split10">
+                        <div class="desc">
                             제목을 누르면
                             <img src="./assets4/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
                             있습니다. 제목을 누르면
@@ -370,7 +372,7 @@
               <section id="section11">
                 <div class="section11__wrap">
                     <div class="parallax__effect">
-                        <a href="/"><img src="./assets4/img/polygon.png" alt="재생"></a>
+                        <a class="button__pa" href=""><img src="./assets4/img/polygon.png" alt="재생"></a>
                         <p class="section11_desc">Parallax Effect</p>
                     </div>
                     <div class="game__effect">
@@ -933,7 +935,7 @@
             })
             gsap.to(".section__right__img1", {
                 opacity:1,
-                x:30,
+                x:0,
                 delay:2.5,
                 rotate:35,
                 scrollTrigger:{
@@ -1723,6 +1725,7 @@
                     // markers: true
                 }
             })
+
             // /section10
         </script>
         <script>
@@ -1804,7 +1807,7 @@
             scrollTrigger: {
                 trigger: ".left__about",
                 start: "top 0%",
-                end: "+=35%",
+                end: "+=45%",
                 pin: true,
                 scrub: 3,
                 //markers: true,
@@ -1816,7 +1819,7 @@
             scrollTrigger: {
                 trigger: ".left__study",
                 start: "top 0%",
-                end: "+=200%",
+                end: "+=130%",
                 pin: true,
                 scrub: 3,
                 //markers: true,

@@ -96,7 +96,7 @@
     }
 }
 
-@media (max-width:486px) {
+@media (max-width: 600px) {
     .header__wrap {
         margin-bottom: 2vh;
     }

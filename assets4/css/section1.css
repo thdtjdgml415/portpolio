@@ -43,7 +43,7 @@
 
 @media (max-width: 760px) {}
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
     .section1__box {
         padding: 2vw 0;
         margin: 1vw 2vw 3vw 2vw !important;

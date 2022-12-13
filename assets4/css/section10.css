@@ -258,7 +258,7 @@ button.search__desc:active:before {
 
 /* /section10 */
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
 
     .game__wrap {
         display: grid;

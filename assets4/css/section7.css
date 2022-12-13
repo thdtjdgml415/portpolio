@@ -380,7 +380,7 @@
     width: 100%;
 }
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
     .section7__wrap {
         display: grid;
         grid-template-areas:

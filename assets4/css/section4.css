@@ -1,13 +1,9 @@
 /* section4 */
-#section4 {
-    position: relative;
-}
-
 .banner1__wrap {
     width: 96vw;
     padding: 5vw 5vw;
     border: 0.4vw solid #000;
-    margin: 9vw 2vw 1vw;
+    margin: 8vw 2vw 1vw;
     border-radius: 1vw;
     text-align: center;
     background: #60A6FE;
@@ -20,8 +16,9 @@
     position: absolute;
     background-image: url(../img/눈-min.gif);
     background-repeat: no-repeat;
-    background-size: contain;
-    left: 35vw;
+    background-size: cover;
+    background-position: center;
+    left: 34vw;
     top: -16vw;
     padding: 16vw;
     z-index: 10;
@@ -41,8 +38,6 @@
     text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     display: inline-block;
     white-space: pre;
-
-
 }
 
 .banner1__wrap .banner1__desc__sub {
@@ -59,12 +54,25 @@
     white-space: pre;
 }
 
+.banner1__bg {
+    position: relative;
+    width: 96vw, ;
+    height: 100%;
+    left: 0vw;
+    top: 0vw;
+    transform: translate(-50%, -50%);
+}
+
+
 .banner1__bg img {
     position: absolute;
-    width: 80vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 36vw;
+    top: -49vw;
+    /* width: 100vw; */
+    /* height: 100vw; */
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 
 .banner1__wrap .banner1__img {
@@ -73,18 +81,19 @@
     padding: 14vw;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     z-index: 20;
-    top: 20vw;
-    left: 48.5vw;
+    top: 21vw;
+    left: 47.5vw;
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
     .banner1__wrap {
         width: 96vw;
         padding: 5vw 5vw;
         border: 0.4vw solid #000;
-        margin: 1vw 2vw 3vw;
+        margin: 8vw 2vw 3vw;
         border-radius: 1vw;
         text-align: center;
         background: #60A6FE;

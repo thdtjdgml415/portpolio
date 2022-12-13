@@ -1,4 +1,8 @@
 /* section2 */
+#section2 {
+    width: 96vw;
+}
+
 .section2__box {
     width: 96vw;
     padding: 0.5vw 2vw;
@@ -44,8 +48,9 @@
 .svg_bg {
     animation: spin 60s infinite linear;
     position: absolute;
-    left: 45vw;
-    top: 37vw;
+    left: 0vw;
+    top: 46vw;
+    width: 96vw;
 }
 
 .svg_bg svg {
@@ -121,7 +126,21 @@
 
 @media (max-width: 1200px) {
     .section2__box {
-        height: 60vw;
+        height: 40vw;
+    }
+
+    .section2__bottom {
+        position: absolute;
+        left: 0;
+        bottom: -200vw;
+        z-index: 40;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .section2__box {
+        height: 40vw;
     }
 
     .section2__bottom {
@@ -145,7 +164,7 @@
     }
 }
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
     .section2__box {
         height: 100vw;
         margin-bottom: 3vw;
@@ -175,6 +194,14 @@
         top: 40vw;
         width: 50vw;
         height: 50vw;
+    }
+
+    .svg_bg {
+        animation: spin 60s infinite linear;
+        position: absolute;
+        left: -3vw;
+        top: 73vw;
+        width: 96vw;
     }
 
 
