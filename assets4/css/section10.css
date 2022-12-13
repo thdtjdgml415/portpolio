@@ -150,7 +150,7 @@ button.search__desc:active:before {
     grid-template-areas:
         "tetris__game card__game"
     ;
-    grid-template-columns: 47.5vw 47.5vw;
+    grid-template-columns: 47.7vw 47.7vw;
     grid-template-rows: 20vw;
     justify-content: space-between;
     overflow: hidden;
