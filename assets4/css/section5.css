@@ -37,8 +37,6 @@
     animation: spin 60s infinite linear;
 }
 
-
-
 #section5 h2 {
     position: relative;
     font-size: 4.21vw;
@@ -58,6 +56,11 @@
     margin-bottom: 2vw;
     position: relative;
     z-index: 10;
+}
+
+#section5 .section5__desc__sub span {
+    display: inline-block;
+    white-space: pre;
 }
 
 .section5__wrap {

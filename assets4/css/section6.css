@@ -58,6 +58,11 @@
     z-index: 10;
 }
 
+#section6 .section6__desc__sub span {
+    display: inline-block;
+    white-space: pre;
+}
+
 .section6__wrap {
     display: grid;
     grid-template-areas:

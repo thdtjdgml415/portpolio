@@ -116,7 +116,7 @@
                 <div class="section5__bg"></div>
                 <h2 class="split4">쎠 미더 머니머니머니 기본코딩</h2>
                 <div class="section5__logo"></div>
-                <div class="section5__desc__sub">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
+                <div class="section5__desc__sub split4_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
                 <div class="section5__wrap">
                     <div class="section5__box1">
                         <div class="section5-1__click">
@@ -167,7 +167,7 @@
                 <div class="section6__bg"></div>
                 <h2 class="split5">쎠 미더 머니머니머니 PHP코딩</h2>
                 <div class="section6__logo"></div>
-                <div class="section6__desc__sub">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
+                <div class="section6__desc__sub split5_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</div>
                 <div class="section6__wrap">
                     <div class="section6__box1">
                         <div class="section6-1__click">
@@ -638,11 +638,24 @@
             splitTextWrap4 = "<span>" + splitTextWrap4 + "</span>";
             text4.innerHTML = splitTextWrap4
 
+            //section5__sub
+            let text4_1 = document.querySelector('.split4_1');
+            let splitTextWrap4_1 = text4_1.innerText.split('').join('</span><span>');
+            splitTextWrap4_1 = "<span>" + splitTextWrap4_1 + "</span>";
+            text4_1.innerHTML = splitTextWrap4_1
+
             //section6__h2
             let text5 = document.querySelector('.split5');
             let splitTextWrap5 = text5.innerText.split('').join('</span><span>');
             splitTextWrap5 = "<span>" + splitTextWrap5 + "</span>";
             text5.innerHTML = splitTextWrap5
+
+            //section6__sub
+            let text5_1 = document.querySelector('.split5_1');
+            let splitTextWrap5_1 = text5_1.innerText.split('').join('</span><span>');
+            splitTextWrap5_1 = "<span>" + splitTextWrap5_1 + "</span>";
+            text5_1.innerHTML = splitTextWrap5_1
+
 
             //section7__h2
             let text6 = document.querySelector('.split6');
@@ -1067,10 +1080,10 @@
             // section5
             gsap.set("#section5", {x:-2000})
             gsap.set("#section5 h2 span", {y:-500})
-            gsap.set(".section5__desc__sub", {y:-500})
-            gsap.set(".section5__box1", {x:-200,opacity:0})
+            gsap.set(".section5__desc__sub span", {y:-500, opacity:0})
+            gsap.set(".section5__box1", {x:200,opacity:0})
             gsap.set(".section5__box2", {opacity:0})
-            gsap.set(".section5__box3", {x:200,opacity:0})
+            gsap.set(".section5__box3", {x:-200,opacity:0})
 
             gsap.to("#section5", {
                 x:0,
@@ -1096,12 +1109,13 @@
                 }
             })
 
-            gsap.to(".section5__desc__sub", {
+            gsap.to(".section5__desc__sub span", {
                 y:0,
                 delay: 1,
-                duration:1.5,
+                duration:1,
                 stagger:0.05,
-                ease: "elastic.inOut(1, 0.3)",
+                opacity:1,
+                ease: Back.easeOut.config(1.7),
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section5",
@@ -1125,7 +1139,8 @@
             gsap.to(".section5__box1", {
                 x:0,
                 delay: 2,
-                duration:1.5,
+                duration:2,
+                rotate:-28,
                 opacity:1,
                 ease: "elastic.inOut(1, 0.3)",
                 scrollTrigger:{
@@ -1138,7 +1153,8 @@
             gsap.to(".section5__box3", {
                 x:0,
                 delay: 2,
-                duration:1.5,
+                duration:2,
+                rotate:28,
                 opacity:1,
                 ease: "elastic.inOut(1, 0.3)",
                 scrollTrigger:{
@@ -1173,7 +1189,7 @@
             // section6
             gsap.set("#section6", {x:-2000})
             gsap.set("#section6 h2 span", {y:-500})
-            gsap.set(".section6__desc__sub", {y:-500})
+            gsap.set(".section6__desc__sub span", {y:-500})
             gsap.set(".section6__box1", {x:460,opacity:0})
             gsap.set(".section6__box2", {opacity:0})
             gsap.set(".section6__box3", {x:-460,opacity:0})
@@ -1193,8 +1209,8 @@
                 y:0,
                 delay: .5,
                 duration:1.5,
-                stagger:0.02,
-                ease: "elastic.inOut(1, 0.3)",
+                stagger:0.1,
+                ease: Bounce.easeOut,
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
@@ -1202,12 +1218,12 @@
                 }
             })
 
-            gsap.to(".section6__desc__sub", {
+            gsap.to(".section6__desc__sub span", {
                 y:0,
-                delay: 1,
-                duration:1.5,
+                delay: 1.5,
+                duration:1,
                 stagger:0.05,
-                ease: "elastic.inOut(1, 0.3)",
+                ease: Back.easeOut.config(1.7),
                 scrollTrigger:{
                     start: "top 50%",
                     trigger: "#section6",
