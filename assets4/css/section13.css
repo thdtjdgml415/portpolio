@@ -60,6 +60,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.section13__study .right__study ul li:hover {
+    background: #ccc;
 }
 
 .section13__study .right__study ul li a {

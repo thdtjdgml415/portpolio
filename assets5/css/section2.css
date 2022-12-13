@@ -1,0 +1,115 @@
+/* section2 */
+#section2 {}
+
+.section2__box {
+    width: 96vw;
+    padding: 0.1vw 1vw;
+    margin: .5vw 2vw;
+    background: #FF6DCD;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+    /* opacity: 0; */
+}
+
+.section2__box__inner {}
+
+.section2__box__inner .section2__desc {
+    font-family: "OKChan";
+    text-align: center;
+    font-size: 12.5vw;
+    color: #FFEB26;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    z-index: 20;
+    position: relative;
+}
+
+.section2__box__inner .section2__desc__sub {
+    font-family: "OKChan";
+    font-size: 12.5vw;
+    margin-left: 20vw;
+    margin-top: -12vw;
+    color: #FFEB26;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    position: relative;
+    z-index: 40;
+    padding-bottom: 6vw;
+    display: inline-block;
+}
+
+
+/* .svg_bg {
+    animation: spin 60s infinite linear;
+    position: absolute;
+    left: 0vw;
+    top: 46vw;
+    width: 96vw;
+}
+
+.svg_bg svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.section2__img1 {
+    background-image: url(../img/section1img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10vw;
+    border: 0.4vw solid #000;
+    width: 16.31vw;
+    height: 16.31vw;
+    position: absolute;
+    left: 9vw;
+    top: 11vw;
+    z-index: 20;
+    display: inline-block;
+}
+
+.section2__img2 {
+    background-image: url(../img/section1img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10vw;
+    border: 0.4vw solid #000;
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    right: 33.9vw;
+    top: 9vw;
+    z-index: 20;
+}
+
+.section2__img3 {
+    background-image: url(../img/section1img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25vw;
+    border: 0.4vw solid #000;
+    width: 24.8vw;
+    height: 24.8vw;
+    position: absolute;
+    right: 3vw;
+    top: 8vw;
+    z-index: 20;
+    display: inline-block;
+}
+
+.section2__bottom {
+    position: absolute;
+    left: 0;
+    bottom: -10vw;
+    z-index: 10;
+    transform: translateY(50vw);
+}
+
+
+
+/* section2 */

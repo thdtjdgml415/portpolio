@@ -1,0 +1,108 @@
+#section3 {
+    margin: 1vw 2vw 7vw;
+}
+
+.section3__wrap {
+    display: grid;
+    grid-template:
+        "section3__box1 section3__box2"
+        "section3__box1 section3__box3"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 6fr;
+    gap: 1vw;
+}
+
+.section3__box1 {
+    grid-area: section3__box1;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.section3__box1>div {
+    background-image: url(../img/section3bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section3__box1>div img {
+    width: 40%;
+    margin: 5vw;
+}
+
+.section3__box1>div button {
+    padding: 1vw 3vw;
+    font-size: 3vw;
+    position: absolute;
+    left: 28vw;
+    top: 23vw;
+}
+
+.section3__box2 {
+    grid-area: section3__box2;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: grid;
+    position: relative;
+}
+
+.section3__box2>img:nth-child(2) {
+    width: 40%;
+    position: absolute;
+    left: 0vw;
+    top: 20%;
+}
+
+.section3__box2>img:nth-child(3) {
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    top: -20%;
+}
+
+
+.section3__box2 button {
+    font-family: "cookierun";
+    width: 100%;
+    display: inline-block;
+    font-size: 3vw;
+    color: #000;
+}
+
+.section3__box3 {
+    grid-area: section3__box3;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    background-image: url(../img/section3bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.section3__box3>img:nth-child(1) {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section3__box3>img:nth-child(2) {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.section3__box3>img:nth-child(3) {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}

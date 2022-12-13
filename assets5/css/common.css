@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* 스킵 메뉴 */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+
+#skip a {
+    background: #000;
+    color: #fff;
+    position: absolute;
+    padding: 20px 40px;
+    left: -400px;
+    top: 5px;
+}
+
+#skip a:active,
+#skip a:focus {
+    left: 5px;
+}
+
+/* container */
+.container {
+    width: 100%;
+    max-width: 1840px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.noise {
+    background-image: url(../img/noise.png);
+    background-blend-mode: color;
+}
+
+/* 박스 스타일1 */
+.boxStyle1 {
+    background-color: #FFEB26;
+    border: 0.4vw solid #000;
+    font-family: 'CookieRun';
+    padding: 1vw 2vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+    text-shadow: 0.2vw 0.2vw #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 배경 */
+
+/* 간격셋팅 */
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
+}
+
+.mb50 {
+    margin-bottom: 50px !important;
+}
+
+.mb60 {
+    margin-bottom: 60px !important;
+}
+
+.mb70 {
+    margin-bottom: 70px !important;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt40 {
+    margin-top: 40px !important;
+}
+
+.mt50 {
+    margin-top: 50px !important;
+}
+
+.mt60 {
+    margin-top: 60px !important;
+}
+
+.mt70 {
+    margin-top: 70px !important;
+}
+
+.svg-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    border-radius: 0.6vw;
+}
+
+.svg-bg .svg {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 4000px;
+    height: 4000px;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+/* .cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.2s;
+} */
+
+/* .cursor.active {
+    background-image: url(../img/myphoto.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    scale: 1.5;
+    transition: all 1;
+} */
