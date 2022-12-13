@@ -57,11 +57,11 @@
 
 .banner1__img {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 55%;
     transform: translate(-50%, -50%);
     z-index: 10;
-
+    transition: all 0.3s;
 }
 
 .banner1__img img {
