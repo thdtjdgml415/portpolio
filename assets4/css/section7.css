@@ -60,6 +60,11 @@
     z-index: 10;
 }
 
+#section7 .section7__desc__sub span {
+    display: inline-block;
+    white-space: pre;
+}
+
 .section7__wrap {
     display: grid;
     grid-template-areas:
