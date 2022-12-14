@@ -17,7 +17,9 @@
     background: #FF6DCD;
     border-radius: 1vw;
     background-image: url(../img/noise.png);
+    overflow: hidden;
 }
+
 
 .section6__title {
     grid-area: section6__title;
