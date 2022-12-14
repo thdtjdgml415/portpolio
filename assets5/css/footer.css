@@ -1,6 +1,7 @@
 /* footer */
 #footer {
     width: 96vw;
+    height: 70vh;
 
 }
 
@@ -70,6 +71,14 @@
     right: 10vw;
     top: 15vw;
     padding: 5.5vw;
+}
+
+@media (max-width:1600px) {
+    #footer {
+
+        height: auto;
+
+    }
 }
 
 /* /footer */

@@ -66,6 +66,8 @@
 
 .banner3__img img {
     width: 100%;
+    border: 0.4vw solid #000;
+    border-radius: 50%;
 }
 
 .banner3__desc span {
