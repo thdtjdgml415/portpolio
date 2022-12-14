@@ -1,7 +1,5 @@
 /* modal__wrap */
-.modal__wrap {
-    overflow: hidden;
-}
+.modal__wrap {}
 
 .modal__wrap .modal__btn {
     border: 2px solid #f5f5;
@@ -21,7 +19,7 @@
 
 .modal__cont {
     width: 100%;
-    height: 100%;
+    height: 105%;
     background-color: #f5f5;
     position: fixed;
     top: -40px;
@@ -29,6 +27,7 @@
     display: flex;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
     transform: scale(0);
     z-index: 1000;
 }

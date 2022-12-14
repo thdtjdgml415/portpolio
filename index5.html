@@ -747,11 +747,33 @@
 
         const modalbg = document.querySelector("body");
         const modalBtn   = document.querySelector(".search__desc .desc");
+        const modalBtn2   = document.querySelector(".tetris__game .desc");
+        const modalBtn3   = document.querySelector(".card__game .desc");
         const modalClose = document.querySelector(".modal__close");
         const modalCont = document.querySelector(".modal__cont")
 
-
+// search
         modalBtn.addEventListener("click", () => {
+            modalCont.classList.add("show");
+            modalbg.classList.add("fixed")
+            modalCont.classList.remove("hide");
+        });
+        modalClose.addEventListener("click", () => {
+            modalCont.classList.add("hide");
+            modalbg.classList.remove("fixed")
+        });
+// tetris
+        modalBtn2.addEventListener("click", () => {
+            modalCont.classList.add("show");
+            modalbg.classList.add("fixed")
+            modalCont.classList.remove("hide");
+        });
+        modalClose.addEventListener("click", () => {
+            modalCont.classList.add("hide");
+            modalbg.classList.remove("fixed")
+        });
+// card
+        modalBtn3.addEventListener("click", () => {
             modalCont.classList.add("show");
             modalbg.classList.add("fixed")
             modalCont.classList.remove("hide");
