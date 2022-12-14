@@ -475,33 +475,33 @@
     }
 
     .section11__wrap .game__effect a {
-        top: 50%;
-        left: 20%;
+        top: 15%;
+        left: 25%;
     }
 
     .section11__wrap .game__effect a {
-        top: 50%;
-        left: 20%;
+        top: 15%;
+        left: 25%;
     }
 
     .section11__wrap .quiz__effect a {
-        top: 50%;
-        left: 20%;
+        top: 15%;
+        left: 25%;
     }
 
     .section11__wrap .slider__effect a {
-        top: 50%;
-        left: 20%;
+        top: 15%;
+        left: 25%;
     }
 
     .section11__wrap .mouse__effect a {
-        top: 50%;
-        left: 20%;
+        top: 15%;
+        left: 25%;
     }
 
     .section11__wrap .section11_desc {
         font-size: 6vw;
-        top: 6vw;
+        top: 3vw;
         right: -30vw;
     }
 }
