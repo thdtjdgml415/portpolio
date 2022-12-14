@@ -1,0 +1,82 @@
+/* section4 */
+#section12 {
+    position: relative;
+}
+
+.banner3__eye {
+    background-image: url(../img/눈-min.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 10vw 15vw;
+    position: absolute;
+    left: 35.04vw;
+    top: -14.5vw;
+    z-index: 10;
+    padding: 15vw;
+}
+
+.banner3__wrap {
+    width: 96vw;
+    margin: 1vw 2vw;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    overflow: hidden;
+    position: relative;
+    background: #FF8ED8;
+}
+
+.banner3__desc {
+    font-size: 13vw;
+    text-align: center;
+    padding: 6vw 0;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    -webkit-text-stroke: 0.1vw #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+
+.banner3__desc__sub {
+    font-size: 1vw;
+    position: absolute;
+    left: 70vw;
+    top: 24vw;
+    z-index: 10;
+}
+
+.banner3__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.banner3__img {
+    position: absolute;
+    top: 53%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: all 0.3s;
+    width: 20vw;
+}
+
+.banner3__img img {
+    width: 100%;
+}
+
+.banner3__desc span {
+    font-family: "OKChan";
+    display: inline-block;
+    white-space: pre;
+}
+
+.banner3__desc__sub span {
+    display: inline-block;
+    white-space: pre;
+}
+
+/* /section4 */

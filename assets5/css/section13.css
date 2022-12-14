@@ -1,0 +1,148 @@
+.section13__inner {
+    width: 96vw;
+    margin: 1vw 2vw 10vw 2vw;
+    font-family: 'Poppins';
+    background: #FFF271;
+    border: 0.4vw solid #000;
+    border-radius: 1vw;
+    padding: 2.5vw 3.1vw;
+}
+
+.section13__about {
+    display: flex;
+}
+
+.section13__about .left__about {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+
+}
+
+.section13__about .right__about {
+    width: 70%;
+    margin-top: 1.6vw;
+    font-size: 1.57vw;
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 10vw;
+    line-height: 1.6;
+}
+
+.section13__study {
+    display: flex;
+}
+
+.section13__study .left__study {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+}
+
+.section13__study .right__study {
+    width: 70%;
+    margin-top: 1.6vw;
+    font-size: 1.57vw;
+    margin-bottom: 10vw;
+}
+
+
+.section13__study .right__study .right__study__desc {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 8vw;
+    line-height: 1.6;
+}
+
+.section13__study .right__study ul {}
+
+.section13__study .right__study ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.section13__study .right__study ul li:hover {
+    background: #ccc;
+}
+
+.section13__study .right__study ul li a {
+    font-family: 'Cafe24SsurroundAir';
+}
+
+
+.section13__contect {
+    display: flex;
+}
+
+.section13__contect .contact__left {
+    width: 30%;
+    font-size: 5.5vw;
+    font-weight: 900;
+    font-family: 'Poppins';
+    line-height: 1;
+}
+
+.contact__right {
+    width: 70%;
+    margin-top: 0.5vw;
+    font-size: 1.57vw;
+    margin-bottom: 10vw;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+.contact__email {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 1vw;
+
+}
+
+.contact__homepage {
+    font-family: 'Cafe24SsurroundAir';
+    margin-bottom: 1vw;
+}
+
+.contact__git {
+    font-family: 'Cafe24SsurroundAir';
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 760px) {}
+
+@media (max-width: 600px) {
+    .section13__about {}
+
+    .section13__about .right__about {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .section13__study {}
+
+    .section13__study .right__study {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .section13__study .right__study .right__study__desc {}
+
+    .section13__study .right__study ul li {
+        flex-wrap: wrap;
+    }
+
+    .section13__contect {
+        display: inline-block;
+    }
+
+    .contact__right {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .section13__contect .contact__left {
+        width: 50%;
+        line-height: 1.6;
+    }
+}
