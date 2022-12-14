@@ -294,8 +294,8 @@
                 <path d="m1301.5 1230.6 1300 97 1.5-176.6-1301.5 77.8v1.8Z"></path>
             </svg>
         </div>
-        <h2 class="section7__title split5">쎠 미더 머니머니머니 리액트코딩</h2>
-        <p class="section7__sub split5_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</p>
+        <h2 class="section7__title split7">쎠 미더 머니머니머니 리액트코딩</h2>
+        <p class="section7__sub split7_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</p>
         <img class="section7__logo" src="./assets5/img/reactlogo.gif" alt="">
         <div class="section7__box1__top__inner">
             <div class="section7__box1__top">
@@ -371,8 +371,8 @@
                 <path d="m1301.5 1230.6 1300 97 1.5-176.6-1301.5 77.8v1.8Z"></path>
             </svg>
         </div>
-        <h2 class="section8__title split6">쎠 미더 머니머니머니 VUE코딩</h2>
-        <p class="section8__sub split6_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</p>
+        <h2 class="section8__title split8">쎠 미더 머니머니머니 VUE코딩</h2>
+        <p class="section8__sub split8_1">열심히 공부하면서 만들었습니다. 그냥 넘어가지 말고 클릭!!!</p>
         <img class="section8__logo" src="./assets5/img/vuevue.gif" alt="">
         <div class="section8__box1__top__inner">
             <div class="section8__box1__top">
@@ -419,6 +419,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script>
+
 
         // 글씨 쪼개기
         let text = document.querySelector('.split');
@@ -532,7 +533,7 @@
             scrollTrigger: {
                 trigger: ".section3__box1",
                 start: "top: 90%",
-                markers:true
+                // markers:true
             }
         });
 
@@ -605,6 +606,7 @@
         })
     </script>
     <script>
+        // section5
         gsap.set(".section5__wrap", {width:"0vw", opacity:0})
         gsap.to(".section5__wrap", {
             width:"96vw",
@@ -616,7 +618,6 @@
                 start: "top 60%",
                 // markers:true
             }
-
         })
 
         // section5
@@ -640,7 +641,7 @@
                 // markers: true
             }
         })
-        // section5
+        // section5__sub
         let text5_1 = document.querySelector('.split5_1');
         let splitTextWrap5_1 = text5_1.innerText.split('').join('</span><span>');
         splitTextWrap5_1 = "<span>" + splitTextWrap5_1 + "</span>";
@@ -661,7 +662,6 @@
                 // markers: true
             }
         })
-
         
         gsap.set(".section5__box2__top__inner", {opacity:0, y:400,})
         gsap.to(".section5__box2__top__inner", {
@@ -706,7 +706,310 @@
                 // markers: true
             }
         })
+    </script>
+    <script>
 
+        // section6
+        gsap.set(".section6__wrap", {width:"0vw", opacity:0})
+        gsap.to(".section6__wrap", {
+            width:"96vw",
+            opacity:1.5,
+            duration:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: "#section4",
+                start: "top 0%",
+                // markers:trues
+            }
+        })
+        // section6__h2
+        let text6 = document.querySelector('.split6');
+        let splitTextWrap6 = text6.innerText.split('').join('</span><span>');
+        splitTextWrap6 = "<span>" + splitTextWrap6 + "</span>";
+        text6.innerHTML = splitTextWrap6;
+
+        gsap.set(".section6__title span", {opacity:0, y:400, x: 400})
+        gsap.to(".section6__title span", {
+            duration:1,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section4",
+                start:"top 0%",
+                // markers: true
+            }
+        })
+        // section6__sub
+        let text6_1 = document.querySelector('.split6_1');
+        let splitTextWrap6_1 = text6_1.innerText.split('').join('</span><span>');
+        splitTextWrap6_1 = "<span>" + splitTextWrap6_1 + "</span>";
+        text6_1.innerHTML = splitTextWrap6_1;
+
+        gsap.set(".section6__sub span", {opacity:0, y:400, x: 400})
+        gsap.to(".section6__sub span", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section4",
+                start:"top 0%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section6__box2__top__inner", {opacity:0, y:400,})
+        gsap.to(".section6__box2__top__inner", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:1.5,
+            scrollTrigger: {
+                trigger: "#section4",
+                start:"top 00%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section6__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.to(".section6__box1__top__inner", {
+            duration:1,
+            opacity:1, 
+            x:0,
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section4",
+                start:"top 00%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section6__box3__top__inner", {opacity:0, y:400, x:-400 })
+        gsap.to(".section6__box3__top__inner", {
+            duration:1,
+            opacity:1,
+            x:0, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section4",
+                start:"top 00%",
+                // markers: true
+            }
+        })
+    </script>
+    <script>
+        // section7
+        gsap.set(".section7__wrap", {width:"0vw", opacity:0})
+        gsap.to(".section7__wrap", {
+            width:"96vw",
+            opacity:1.5,
+            duration:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: "#section5",
+                start: "top 70%",
+                // markers:true
+            }
+        })
+        // section7__h2
+        let text7 = document.querySelector('.split7');
+        let splitTextWrap7 = text7.innerText.split('').join('</span><span>');
+        splitTextWrap7 = "<span>" + splitTextWrap7 + "</span>";
+        text7.innerHTML = splitTextWrap7;
+
+        gsap.set(".section7__title span", {opacity:0, y:400, x: 400})
+        gsap.to(".section7__title span", {
+            duration:1,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 70%",
+                // markers: true
+            }
+        })
+        // section7__sub
+        let text7_1 = document.querySelector('.split7_1');
+        let splitTextWrap7_1 = text7_1.innerText.split('').join('</span><span>');
+        splitTextWrap7_1 = "<span>" + splitTextWrap7_1 + "</span>";
+        text7_1.innerHTML = splitTextWrap7_1;
+
+        gsap.set(".section7__sub span", {opacity:0, y:400, x: 400})
+        gsap.to(".section7__sub span", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 70%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section7__box2__top__inner", {opacity:0, y:400,})
+        gsap.to(".section7__box2__top__inner", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:1.5,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 70%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section7__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.to(".section7__box1__top__inner", {
+            duration:1,
+            opacity:1, 
+            x:0,
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 70%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section7__box3__top__inner", {opacity:0, y:400, x:-400 })
+        gsap.to(".section7__box3__top__inner", {
+            duration:1,
+            opacity:1,
+            x:0, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 70%",
+                // markers: true
+            }
+        })
+    </script>
+    <script>
+              // section8
+        gsap.set(".section8__wrap", {width:"0vw", opacity:0})
+        gsap.to(".section8__wrap", {
+            width:"96vw",
+            opacity:1.5,
+            duration:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: "#section5",
+                start: "top 30%",
+                markers:true
+            }
+        })
+        // section8__h2
+        let text8 = document.querySelector('.split8');
+        let splitTextWrap8 = text8.innerText.split('').join('</span><span>');
+        splitTextWrap8 = "<span>" + splitTextWrap8 + "</span>";
+        text8.innerHTML = splitTextWrap8;
+
+        gsap.set(".section8__title span", {opacity:0, y:400, x: 400})
+        gsap.to(".section8__title span", {
+            duration:1,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+        // section8__sub
+        let text8_1 = document.querySelector('.split8_1');
+        let splitTextWrap8_1 = text8_1.innerText.split('').join('</span><span>');
+        splitTextWrap8_1 = "<span>" + splitTextWrap8_1 + "</span>";
+        text8_1.innerHTML = splitTextWrap8_1;
+
+        gsap.set(".section8__sub span", {opacity:0, y:400, x: 400})
+        gsap.to(".section8__sub span", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section8__box2__top__inner", {opacity:0, y:400,})
+        gsap.to(".section8__box2__top__inner", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:1.5,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section8__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.to(".section8__box1__top__inner", {
+            duration:1,
+            opacity:1, 
+            x:0,
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".section8__box3__top__inner", {opacity:0, y:400, x:-400 })
+        gsap.to(".section8__box3__top__inner", {
+            duration:1,
+            opacity:1,
+            x:0, 
+            y:0, 
+            ease: Bounce.easeOut, 
+            delay:2,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
     </script>
 </body>
 </html>
