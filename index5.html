@@ -415,6 +415,88 @@
     </div>
 </section>
 <!-- section8 -->
+<section id="section9">
+    <div class="banner2__eye"></div>
+    <div class="banner2__wrap">
+        <div class="banner2__bg">
+            <img src="./assets5/img/gamebanner.png" alt="배너2" />
+        </div>    
+    <div class="banner2__desc split9">나의 작업물</div>
+    <div class="banner2__desc__sub split9_1">
+        너무 잘했다고 놀라지 마시오! 놀람주의
+    </div>
+    <div class="banner2__img">
+        <img src="./assets5/img/glasses-min.gif" alt="헤드셋">
+    </div>
+    </div>
+</section>
+<!-- section9 -->
+<section id="section10">
+    <div class="game__wrap">
+        <div class="search__game">
+            <button class="search__desc"><div class="desc">서치게임</div></button>
+        </div>
+        <div class="game__label">
+            <div class="desc">
+                제목을 누르면
+                <img src="./assets4/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
+                있습니다. 제목을 누르면
+                <img src="./assets4/img/가스레인지.gif" alt="가스레인지" />
+                게임을 할 수 있습니다. 
+                제목을 누르면
+                <img src="./assets4/img/가스레인지.gif" alt="가스레인지" />
+                게임을 할 수 있습니다. 
+                <img src="./assets4/img/가스레인지.gif" alt="가스레인지" /> 게임을 할 수
+                있습니다. 제목을 누르면
+                <img src="./assets4/img/가스레인지.gif" alt="가스레인지" />
+                게임을 할 수 있습니다.  제목을 누르면
+            </div>
+        </div>
+        <div class="section10__game">
+            <div class="tetris__game"><div class="desc tetris">테트리스</div></div>
+            <div class="card__game"><div class="desc ">카드게임</div></div>
+        </div>
+        <div class="label2__game">
+            <div class="desc">
+                모든 게임은 자바스크립트로 구현했습니다.
+                <img src="./assets4/img/Nauto.gif" alt="주사위" />
+                모든 게임은 자바스크립트로 구현했습니다.
+                <img src="./assets4/img/Nauto.gif" alt="주사위" />
+                모든 게임은 자바스크립트로 구현했습니다.
+                <img src="./assets4/img/Nauto.gif" alt="주사위" />
+                모든 게임은 자바스크립트로 구현했습니다.
+                <img src="./assets4/img/Nauto.gif" alt="주사위" />
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- section10 -->
+   <!-- section11 -->
+   <section id="section11">
+    <div class="section11__wrap">
+        <div class="parallax__effect">
+            <a class="button__pa" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/parallaxEffect01.html"><img src="./assets4/img/polygon.png" alt="재생"></a>
+            <p class="section11_desc">Parallax Effect</p>
+        </div>
+        <div class="game__effect">
+            <a class="button__ge" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/gameEffect01.html"><img src="./assets4/img/polygon.png" alt="재생"></a>
+            <p class="section11_desc">Game Effect</p>
+        </div>
+        <div class="quiz__effect">
+            <a class="button__qe" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/quizEffect01.html"><img src="./assets4/img/polygon.png" alt="재생"></a>
+            <p class="section11_desc">Quiz Effect</p>
+        </div>
+        <div class="mouse__effect">
+            <a class="button__me" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/mouseEffect01.html"><img src="./assets4/img/polygon.png" alt="재생"></a>
+            <p class="section11_desc">Mouse Effect</p>
+        </div>
+        <div class="slider__effect">
+            <a class="button__se" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/sliderEffect01.html"><img src="./assets4/img/polygon.png" alt="재생"></a>
+            <p class="section11_desc">Slider Effect</p>
+        </div>
+    </div>
+  </section>
+  <!-- section11 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
@@ -1010,6 +1092,66 @@
                 // markers: true
             }
         })
+    </script>
+    <script>
+        // section9
+        gsap.set(".section9__wrap", {width:"0vw", opacity:0})
+        gsap.to(".section9__wrap", {
+            width:"96vw",
+            opacity:1.5,
+            duration:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: "#section5",
+                start: "top 30%",
+                markers:true
+            }
+        })
+        // section9__h2
+        let text9 = document.querySelector('.split9');
+        let splitTextWrap9 = text9.innerText.split('').join('</span><span>');
+        splitTextWrap9 = "<span>" + splitTextWrap9 + "</span>";
+        text9.innerHTML = splitTextWrap9;
+
+        gsap.set(".section9__title span", {opacity:0, y:400, x: 400})
+        gsap.to(".section9__title span", {
+            duration:1,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+        // section9__sub
+        let text9_1 = document.querySelector('.split9_1');
+        let splitTextWrap9_1 = text9_1.innerText.split('').join('</span><span>');
+        splitTextWrap9_1 = "<span>" + splitTextWrap9_1 + "</span>";
+        text9_1.innerHTML = splitTextWrap9_1;
+
+        gsap.set(".section9__sub span", {opacity:0, y:400, x: 400})
+        gsap.to(".section9__sub span", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section5",
+                start:"top 30%",
+                // markers: true
+            }
+        })
+    </script>
+    <script>
+   
     </script>
 </body>
 </html>
