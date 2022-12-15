@@ -1395,6 +1395,19 @@
         })
     </script>
     <script>
+
+        gsap.set(".banner2__eye", {opacity:0})
+        gsap.to(".banner2__eye", { 
+            opacity:1,
+            duration:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: ".banner2__wrap",
+                start: "top 150%",
+                markers:true
+            }
+        })
+
         // section9
         gsap.set(".banner2__wrap", {width:"0vw", opacity:0})
         gsap.to(".banner2__wrap", {
@@ -1404,7 +1417,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 100%",
+                start: "top 150%",
                 markers:true
             }
         })
@@ -1425,7 +1438,7 @@
             stagger:0.04,
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 100%",
+                start: "top 150%",
                 // markers: true
             }
         })
@@ -1442,66 +1455,281 @@
             y:0, 
             x: 0,
             ease: Bounce.easeOut, 
-            delay:1,
+            delay:1.5,
             stagger:0.04,
             scrollTrigger: {
-                trigger: "#section8",
-                start: "top 80%",
+                trigger: ".banner2__wrap",
+                start: "top 150%",
                 // markers: true
             }
         })
     </script>
     <script>
+        // section10
      gsap.set(".search__game", {
         width:"0vw"
      })
      gsap.to(".search__game", {
-        width:"96vw"
+        width:"96vw",
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".search__game .desc", {
+        opacity:0,
+        y: 200,
+        
+     })
+     gsap.to(".search__game .desc", {
+        opacity:1,
+        delay:0.5,
+        y:0,
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".game__label", {
+        opacity:0,
+        width:"0vw",
+        y: 200,
+     })
+     gsap.to(".game__label", {
+        opacity:1,
+        delay:1,
+        width:"96vw",
+        y:0,
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".game__label .desc", {
+        opacity:0,
+        y: 200,
+        
+     })
+     gsap.to(".game__label .desc", {
+        opacity:1,
+        delay:1.5,
+        y:0,
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+    gsap.set(".tetris__game", {
+        opacity:0,
+        y: 200,
+     })
+     gsap.to(".tetris__game", {
+        opacity:1,
+        delay:2,
+        y:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+    gsap.set(".card__game", {
+        opacity:0,
+        y: 200,
+        
+     })
+     gsap.to(".card__game", {
+        opacity:1,
+        delay:2,
+        y:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".label2__game", {
+        opacity:0,
+        width:"0vw",
+        y: 200,
+     })
+     gsap.to(".label2__game", {
+        opacity:1,
+        delay:2.5,
+        width:"96vw",
+        y:0,
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".label2__game .desc", {
+        opacity:0,
+        y: 200,
+        
+     })
+     gsap.to(".label2__game .desc", {
+        opacity:1,
+        delay:3,
+        y:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+    gsap.set(".parallax__effect", {
+        opacity:0,
+        y: 200,
+        x: 200
+        
+     })
+     gsap.to(".parallax__effect", {
+        opacity:1,
+        delay:3.5,
+        y:0,
+        x:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".game__effect", {
+        opacity:0,
+        y: 200,
+        x: 200
+        
+     })
+     gsap.to(".game__effect", {
+        opacity:1,
+        delay:3.7,
+        y:0,
+        x:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".quiz__effect", {
+        opacity:0,
+        y: 200,
+        x: 200
+        
+     })
+     gsap.to(".quiz__effect", {
+        opacity:1,
+        delay:3.9,
+        y:0,
+        x:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+
+    gsap.set(".mouse__effect", {
+        opacity:0,
+        y: 200,
+        x: 200
+        
+     })
+     gsap.to(".mouse__effect", {
+        opacity:1,
+        delay:4.1,
+        y:0,
+        x:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            markers: true
+        }
+    })
+    
+    gsap.set(".slider__effect", {
+        opacity:0,
+        y: 200,
+        x: 200
+        
+     })
+     gsap.to(".slider__effect", {
+        opacity:1,
+        delay:4.3,
+        y:0,
+        x:0,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+            trigger: "#section9",
+            start: "top 0%",
+            // markers: true
+        }
     })
     </script>
     <script>
     // // section12__h2
-    // let text12 = document.querySelector('.split12');
-    //     let splitTextWrap12 = text12.innerText.split('').join('</span><span>');
-    //     splitTextWrap12 = "<span>" + splitTextWrap12 + "</span>";
-    //     text12.innerHTML = splitTextWrap12;
+    let text12 = document.querySelector('.split12');
+        let splitTextWrap12 = text12.innerText.split('').join('</span><span>');
+        splitTextWrap12 = "<span>" + splitTextWrap12 + "</span>";
+        text12.innerHTML = splitTextWrap12;
 
-    //     gsap.set(".banner3__desc span", {opacity:0, y:400, x: 400})
-    //     gsap.to(".banner3__desc span", {
-    //         duration:1,
-    //         opacity:1, 
-    //         y:0, 
-    //         x: 0,
-    //         ease: Bounce.easeOut, 
-    //         delay:1,
-    //         stagger:0.04,
-    //         scrollTrigger: {
-    //             trigger: "#section8",
-    //             start: "top 150%",
-    //             // markers: true
-    //         }
-    //     })
-    //     // section12__sub
-    //     let text12_1 = document.querySelector('.split12_1');
-    //     let splitTextWrap12_1 = text12_1.innerText.split('').join('</span><span>');
-    //     splitTextWrap12_1 = "<span>" + splitTextWrap12_1 + "</span>";
-    //     text12_1.innerHTML = splitTextWrap12_1;
+        gsap.set(".banner3__desc span", {opacity:0, y:400, x: 400})
+        gsap.to(".banner3__desc span", {
+            duration:1,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section9",
+                start: "top 150%",
+                // markers: true
+            }
+        })
+        // section12__sub
+        let text12_1 = document.querySelector('.split12_1');
+        let splitTextWrap12_1 = text12_1.innerText.split('').join('</span><span>');
+        splitTextWrap12_1 = "<span>" + splitTextWrap12_1 + "</span>";
+        text12_1.innerHTML = splitTextWrap12_1;
 
-    //     gsap.set(".banner3__desc__sub span", {opacity:0, y:400, x: 400})
-    //     gsap.to(".banner3__desc__sub span", {
-    //         duration:1.5,
-    //         opacity:1, 
-    //         y:0, 
-    //         x: 0,
-    //         ease: Bounce.easeOut, 
-    //         delay:1,
-    //         stagger:0.04,
-    //         scrollTrigger: {
-    //             trigger: "#section8",
-    //             start:"top 30%",
-    //             // markers: true
-    //         }
-    //     })
+        gsap.set(".banner3__desc__sub span", {opacity:0, y:400, x: 400})
+        gsap.to(".banner3__desc__sub span", {
+            duration:1.5,
+            opacity:1, 
+            y:0, 
+            x: 0,
+            ease: Bounce.easeOut, 
+            delay:1,
+            stagger:0.04,
+            scrollTrigger: {
+                trigger: "#section8",
+                start:"top 30%",
+                // markers: true
+            }
+        })
     </script>
     <script>
            // section14               

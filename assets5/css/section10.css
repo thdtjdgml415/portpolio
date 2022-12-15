@@ -3,6 +3,7 @@
     width: 96vw;
     margin: 1vw 2vw;
     overflow: hidden;
+
 }
 
 .game__wrap {
@@ -31,6 +32,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    height: 20vw;
 }
 
 .search__game .search__desc {
@@ -44,8 +46,6 @@
     width: 50vw;
     height: 10vw;
     text-align: center;
-
-
 }
 
 .search__desc .desc {
