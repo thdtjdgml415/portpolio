@@ -743,6 +743,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
     <script>
 
         const modalbg = document.querySelector("body");
@@ -989,6 +990,7 @@
         })
     </script>
     <script>
+        // gsap.registerPlugin ( CustomEase );  
         // section5
         gsap.set(".section5__wrap", {width:"0vw", opacity:0})
         gsap.to(".section5__wrap", {
@@ -1008,14 +1010,14 @@
         let splitTextWrap5 = text5.innerText.split('').join('</span><span>');
         splitTextWrap5 = "<span>" + splitTextWrap5 + "</span>";
         text5.innerHTML = splitTextWrap5;
-
-        gsap.set(".section5__title span", {opacity:0, y:400, x: 400})
+        // CustomEase.create("custom", "M0,0 C0.126,0.382 0.48,1.28 0.352,1.162 0.158,0.983 0.818,1.001 1,1 ")
+        gsap.set(".section5__title span", {opacity:0,y:-500})
         gsap.to(".section5__title span", {
-            duration:1,
-            opacity:1, 
-            y:0, 
-            x: 0,
+            duration:1.5,
+            opacity:1,
             ease: Bounce.easeOut, 
+            y:0,
+
             delay:1,
             stagger:0.04,
             scrollTrigger: {
@@ -1030,7 +1032,7 @@
         splitTextWrap5_1 = "<span>" + splitTextWrap5_1 + "</span>";
         text5_1.innerHTML = splitTextWrap5_1;
 
-        gsap.set(".section5__sub span", {opacity:0, y:400, x: 400})
+        gsap.set(".section5__sub span", {opacity:0, y:100, x: 100})
         gsap.to(".section5__sub span", {
             duration:1.5,
             opacity:1, 
@@ -1101,7 +1103,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers:true
             }
         })
@@ -1110,19 +1112,19 @@
         let splitTextWrap6 = text6.innerText.split('').join('</span><span>');
         splitTextWrap6 = "<span>" + splitTextWrap6 + "</span>";
         text6.innerHTML = splitTextWrap6;
-
+        CustomEase.create("custom", "M0,0 C0.126,0.382 0.022,1.013 0.194,0.882 0.8,0.416 0.818,1.001 1,1 ")
         gsap.set(".section6__title span", {opacity:0, y:400, x: 400})
         gsap.to(".section6__title span", {
             duration:1,
             opacity:1, 
             y:0, 
             x: 0,
-            ease: Bounce.easeOut, 
+            ease: "custom", 
             delay:1,
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1131,38 +1133,37 @@
         let splitTextWrap6_1 = text6_1.innerText.split('').join('</span><span>');
         splitTextWrap6_1 = "<span>" + splitTextWrap6_1 + "</span>";
         text6_1.innerHTML = splitTextWrap6_1;
-
+        CustomEase.create("6sub", "M0,0 C0.126,0.382 0.022,1.013 0.194,0.882 0.395,0.727 0.568,0.284 0.668,0.302 0.867,0.336 0.878,1 1,1 ")
         gsap.set(".section6__sub span", {opacity:0, y:400, x: 400})
         gsap.to(".section6__sub span", {
             duration:1.5,
             opacity:1, 
             y:0, 
             x: 0,
-            ease: Bounce.easeOut, 
+            ease: "circ.inOut",
             delay:1,
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section6__box2__top__inner", {opacity:0, y:400,})
+        gsap.set(".section6__box2__top__inner", {opacity:0,})
         gsap.to(".section6__box2__top__inner", {
             duration:1.5,
-            opacity:1, 
-            y:0, 
+            opacity:1,  
             ease: Bounce.easeOut, 
             delay:1.5,
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section6__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.set(".section6__box1__top__inner", {opacity:0, x:400 })
         gsap.to(".section6__box1__top__inner", {
             duration:1,
             opacity:1, 
@@ -1172,12 +1173,12 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section6__box3__top__inner", {opacity:0, y:400, x:-400 })
+        gsap.set(".section6__box3__top__inner", {opacity:0, x:-400 })
         gsap.to(".section6__box3__top__inner", {
             duration:1,
             opacity:1,
@@ -1187,7 +1188,7 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1202,7 +1203,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers:true
             }
         })
@@ -1211,19 +1212,19 @@
         let splitTextWrap7 = text7.innerText.split('').join('</span><span>');
         splitTextWrap7 = "<span>" + splitTextWrap7 + "</span>";
         text7.innerHTML = splitTextWrap7;
-
-        gsap.set(".section7__title span", {opacity:0, y:400, x: 400})
+        CustomEase.create("7h2", "M0,0 C0.29,0 0.653,0.041 0.724,0.126 0.793,0.209 0.466,0.362 0.498,0.502 0.518,0.592 0.321,0.822 0.384,0.916 0.459,1.027 0.704,1 1,1 ")
+        gsap.set(".section7__title span", {opacity:0, y:-400})
         gsap.to(".section7__title span", {
             duration:1,
             opacity:1, 
             y:0, 
             x: 0,
-            ease: Bounce.easeOut, 
+            ease: "7h2",
             delay:1,
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1233,18 +1234,18 @@
         splitTextWrap7_1 = "<span>" + splitTextWrap7_1 + "</span>";
         text7_1.innerHTML = splitTextWrap7_1;
 
-        gsap.set(".section7__sub span", {opacity:0, y:400, x: 400})
+        gsap.set(".section7__sub span", {opacity:0, y:100, x: 100})
         gsap.to(".section7__sub span", {
             duration:1.5,
             opacity:1, 
             y:0, 
             x: 0,
-            ease: Bounce.easeOut, 
+            ease: "bounce.inOut",
             delay:1,
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1258,12 +1259,12 @@
             delay:1.5,
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section7__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.set(".section7__box1__top__inner", {opacity:0, x:-400 })
         gsap.to(".section7__box1__top__inner", {
             duration:1,
             opacity:1, 
@@ -1273,12 +1274,12 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section7__box3__top__inner", {opacity:0, y:400, x:-400 })
+        gsap.set(".section7__box3__top__inner", {opacity:0, x:400 })
         gsap.to(".section7__box3__top__inner", {
             duration:1,
             opacity:1,
@@ -1288,7 +1289,7 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section6",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1303,7 +1304,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers:true
             }
         })
@@ -1313,7 +1314,7 @@
         splitTextWrap8 = "<span>" + splitTextWrap8 + "</span>";
         text8.innerHTML = splitTextWrap8;
 
-        gsap.set(".section8__title span", {opacity:0, y:400, x: 400})
+        gsap.set(".section8__title span", {opacity:0, y:100, x: 200})
         gsap.to(".section8__title span", {
             duration:1,
             opacity:1, 
@@ -1324,7 +1325,7 @@
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1334,7 +1335,7 @@
         splitTextWrap8_1 = "<span>" + splitTextWrap8_1 + "</span>";
         text8_1.innerHTML = splitTextWrap8_1;
 
-        gsap.set(".section8__sub span", {opacity:0, y:400, x: 400})
+        gsap.set(".section8__sub span", {opacity:0, y:-100, x: -100})
         gsap.to(".section8__sub span", {
             duration:1.5,
             opacity:1, 
@@ -1345,7 +1346,7 @@
             stagger:0.04,
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1359,12 +1360,12 @@
             delay:1.5,
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
 
-        gsap.set(".section8__box1__top__inner", {opacity:0, y:400, x:400 })
+        gsap.set(".section8__box1__top__inner", {opacity:0, y:-100, x:-100 })
         gsap.to(".section8__box1__top__inner", {
             duration:1,
             opacity:1, 
@@ -1374,7 +1375,7 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1389,7 +1390,7 @@
             delay:2,
             scrollTrigger: {
                 trigger: "#section7",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1403,7 +1404,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 150%",
+                start: "top 130%",
                 markers:true
             }
         })
@@ -1417,7 +1418,7 @@
             ease: Bounce.easeOut, 
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 150%",
+                start: "top 130%",
                 markers:true
             }
         })
@@ -1438,7 +1439,7 @@
             stagger:0.04,
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 150%",
+                start: "top 130%",
                 // markers: true
             }
         })
@@ -1459,7 +1460,7 @@
             stagger:0.04,
             scrollTrigger: {
                 trigger: ".banner2__wrap",
-                start: "top 150%",
+                start: "top 110%",
                 // markers: true
             }
         })
@@ -1688,8 +1689,39 @@
     })
     </script>
     <script>
+        
+        gsap.set(".banner3__eye", {opacity:0, scale:1.5})
+        gsap.to(".banner3__eye", { 
+            opacity:1,
+            duration:1,
+            scale:1,
+            ease: Bounce.easeOut, 
+            scrollTrigger: {
+                trigger: "#section11",
+                start: "top 0%",
+                markers:true
+            }
+        })
+
+        gsap.set(".banner3__wrap", {
+            width:"0vw",
+            opacity:0,
+            
+        })
+        gsap.to(".banner3__wrap", {
+            width:"96vw",
+            ease: Bounce.easeOut, 
+            opacity:1,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#section11",
+                start: "top 0%",
+                // markers: true
+            }
+        })
+
     // // section12__h2
-    let text12 = document.querySelector('.split12');
+        let text12 = document.querySelector('.split12');
         let splitTextWrap12 = text12.innerText.split('').join('</span><span>');
         splitTextWrap12 = "<span>" + splitTextWrap12 + "</span>";
         text12.innerHTML = splitTextWrap12;
@@ -1701,11 +1733,11 @@
             y:0, 
             x: 0,
             ease: Bounce.easeOut, 
-            delay:1,
+            delay:1.5,
             stagger:0.04,
             scrollTrigger: {
-                trigger: "#section9",
-                start: "top 150%",
+                trigger: "#section11",
+                start: "top 00%",
                 // markers: true
             }
         })
@@ -1725,8 +1757,26 @@
             delay:1,
             stagger:0.04,
             scrollTrigger: {
-                trigger: "#section8",
-                start:"top 30%",
+                trigger: "#section11",
+                start:"top 00%",
+                // markers: true
+            }
+        })
+
+        gsap.set(".banner3__img", {
+            opacity:0,
+            scale: 1.8
+            
+        })
+        gsap.to(".banner3__img", {
+            delay:1.5,
+            ease: Bounce.easeOut, 
+            opacity:1,
+            duration:1,
+            scale:1,
+            scrollTrigger: {
+                trigger: "#section11",
+                start: "top 0%",
                 // markers: true
             }
         })
@@ -1750,7 +1800,7 @@
             scrollTrigger: {
                 trigger: ".left__study",
                 start: "top 0%",
-                end: "+=130%",
+                end: "+=140%",
                 pin: true,
                 scrub: 3,
                 //markers: true,

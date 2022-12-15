@@ -15,6 +15,7 @@
     top: -14.5vw;
     z-index: 10;
     padding: 15vw;
+
 }
 
 .banner3__wrap {
@@ -25,6 +26,7 @@
     overflow: hidden;
     position: relative;
     background: #FF8ED8;
+    height: 30vw;
 }
 
 .banner3__desc {
