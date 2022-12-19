@@ -9,7 +9,7 @@
         "section3__box1 section3__box3"
     ;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr 5fr;
+    grid-template-rows: 2fr 6fr;
     gap: 1vw;
 }
 
@@ -18,13 +18,13 @@
     border: 0.4vw solid #000;
     border-radius: 1vw;
     overflow: hidden;
-}
-
-.section3__box1>div {
     background-image: url(../img/section3bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.section3__box1>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .section3__box1>div button {
-    padding: 1vw 3vw;
+    padding: 1vw 4vw;
     font-size: 3vw;
     position: absolute;
     left: 28vw;
@@ -60,12 +60,15 @@
 }
 
 .section3__box2>img:nth-child(3) {
-    width: 40%;
+    width: 30%;
     position: absolute;
     left: 60%;
     top: -20%;
 }
 
+.section3__box2 a {
+    width: 100%;
+}
 
 .section3__box2 a button {
     font-family: "cookierun";
@@ -101,8 +104,8 @@
 }
 
 .section3__box3>img:nth-child(3) {
-    width: 50%;
+    width: 40%;
     position: absolute;
-    left: 50%;
-    top: 15%;
+    left: 60%;
+    top: 25%;
 }
