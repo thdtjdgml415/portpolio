@@ -474,7 +474,7 @@
         justify-content: space-between;
     }
 
-    .section11__wrap .game__effect a {
+    .section11__wrap .parallax__effect a {
         top: 15%;
         left: 25%;
     }
@@ -505,19 +505,203 @@
         right: -30vw;
     }
 
+    .section11__wrap .parallax__effect a.button__pa {
+        width: 10vw;
+        height: 10vw;
+        text-transform: uppercase;
+        padding: 2vw;
+        background: #FF9CDD;
+        border: 0.4vw solid #000;
+        border-radius: 10vw;
+        transform-style: preserve-3d;
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+
     .section11__wrap .parallax__effect a.button__pa::before {
         position: absolute;
         content: "";
         width: 100%;
         height: 100%;
-        top: 0;
+        top: -25%;
         left: 0;
         right: 0;
         bottom: 0;
         background: #FF9CDD;
         border-radius: inherit;
-        box-shadow: 0 0 0 0.2vw #000, 0 0.325em 0 0 #000;
+        box-shadow: 0 0 0 0.1vw #000, 0 2vw 0 0 #000;
         transform: translate3d(0, 0.75em, -1em);
         transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     }
+
+    .section11__wrap .parallax__effect a.button__pa:hover {
+        background: #ffe9e9;
+        transform: translate(0, 2vw);
+    }
+
+    .section11__wrap .parallax__effect a.button__pa:hover::before {
+        box-shadow: 0 0 0 0.3vw #000, 0 0.5vw 0 0 #000;
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .section11__wrap .parallax__effect a.button__pa:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+    }
+
+    .section11__wrap .parallax__effect a.button__pa:active:before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em);
+    }
+
+    /* parallax */
+    .section11__wrap .game__effect a.button__ge::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #52C6FF;
+        border-radius: inherit;
+        box-shadow: 0 0 0 0.1vw #000, 0 2vw 0 0 #000;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .section11__wrap .game__effect a.button__ge:hover {
+        background: #ffe9e9;
+        transform: translate(0, 2vw);
+    }
+
+    .section11__wrap .game__effect a.button__ge:hover::before {
+        box-shadow: 0 0 0 0.3vw #000, 0 0.5vw 0 0 #000;
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .section11__wrap .game__effect a.button__ge:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+    }
+
+    .section11__wrap .game__effect a.button__ge:active:before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em);
+    }
+
+    /* game */
+    .section11__wrap .quiz__effect a.button__qe::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #C58AF3;
+        border-radius: inherit;
+        box-shadow: 0 0 0 0.1vw #000, 0 2vw 0 0 #000;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .section11__wrap .quiz__effect a.button__qe:hover {
+        background: #ffe9e9;
+        transform: translate(0, 2vw);
+    }
+
+    .section11__wrap .quiz__effect a.button__qe:hover::before {
+        box-shadow: 0 0 0 0.3vw #000, 0 0.5vw 0 0 #000;
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .section11__wrap .quiz__effect a.button__qe:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+    }
+
+    .section11__wrap .quiz__effect a.button__qe:active:before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em);
+    }
+
+    /* quiz */
+
+    /* mouse */
+
+    .section11__wrap .mouse__effect a.button__me::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FE490B;
+        border-radius: inherit;
+        box-shadow: 0 0 0 0.1vw #000, 0 2vw 0 0 #000;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .section11__wrap .mouse__effect a.button__me:hover {
+        background: #ffe9e9;
+        transform: translate(0, 2vw);
+    }
+
+    .section11__wrap .mouse__effect a.button__me:hover::before {
+        box-shadow: 0 0 0 0.3vw #000, 0 0.5vw 0 0 #000;
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .section11__wrap .mouse__effect a.button__me:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+    }
+
+    .section11__wrap .mouse__effect a.button__me:active:before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em);
+    }
+
+    /* slider */
+    .section11__wrap .slider__effect a.button__se::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FFF271;
+        border-radius: inherit;
+        box-shadow: 0 0 0 0.1vw #000, 0 2vw 0 0 #000;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .section11__wrap .slider__effect a.button__se:hover {
+        background: #ffe9e9;
+        transform: translate(0, 2vw);
+    }
+
+    .section11__wrap .slider__effect a.button__se:hover::before {
+        box-shadow: 0 0 0 0.3vw #000, 0 0.5vw 0 0 #000;
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .section11__wrap .slider__effect a.button__se:active {
+        background: #ffe9e9;
+        transform: translate(0em, 0.75em);
+    }
+
+    .section11__wrap .slider__effect a.button__se:active:before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em);
+    }
+
 }

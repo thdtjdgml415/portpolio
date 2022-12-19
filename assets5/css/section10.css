@@ -274,6 +274,6 @@ button.search__desc {
         justify-content: space-between;
         overflow: hidden;
         align-content: space-around;
-        gap: 0.6vw;
+        gap: 0.3vw;
     }
 }

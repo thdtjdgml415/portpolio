@@ -154,14 +154,14 @@
 @media (max-width: 600px) {
     .section2__box {
         height: 100vw;
-        margin-bottom: 1vw;
+        margin: 2vw 2vw;
     }
 
     .section2__box__inner .section2__desc {
         font-size: 20vw !important;
         line-height: 1;
         left: 0;
-        top: 0vw !important;
+        top: 4vw !important;
     }
 
     .section2__box__inner .section2__desc__sub {
@@ -178,7 +178,7 @@
 
     .section2__box__inner .section2__img3 {
         left: 21vw;
-        top: 40vw;
+        top: 45svw;
         width: 50vw;
         height: 50vw;
     }

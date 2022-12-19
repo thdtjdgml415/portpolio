@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="section3__box2">
-                <button class="boxStyle1 noise">저를 소개합니다. 클릭해주세요</button>
+                <a target="_blank" href="https://thdtjdgml415.github.io/codingclass/javascript/study/effect/parallax_apple.html"><button class="boxStyle1 noise">저를 소개합니다. 클릭해주세요</button></a> 
                 <img src="./assets5/img/money.gif" alt="머니">
                 <img src="./assets5/img/money.gif" alt="머니">
             </div>
@@ -803,13 +803,15 @@
 
         requestAnimationFrame(raf);
 
-
-
+        let width = innerWidth;
+        
         // 글씨 쪼개기
-        let text = document.querySelector('.split');
-        let splitTextWrap = text.innerText.split('').join('</span><span>');
-        splitTextWrap = "<span>" + splitTextWrap + "</span>";
-        text.innerHTML = splitTextWrap;
+        if(width >600) {
+            let text = document.querySelector('.split');
+            let splitTextWrap = text.innerText.split('').join('</span><span>');
+            splitTextWrap = "<span>" + splitTextWrap + "</span>";
+            text.innerHTML = splitTextWrap;
+        }
 
 
         // header
