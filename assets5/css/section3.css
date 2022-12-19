@@ -9,7 +9,7 @@
         "section3__box1 section3__box3"
     ;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr 6fr;
+    grid-template-rows: 2fr 5fr;
     gap: 1vw;
 }
 
@@ -67,7 +67,7 @@
 }
 
 
-.section3__box2 button {
+.section3__box2 a button {
     font-family: "cookierun";
     width: 100%;
     display: inline-block;
