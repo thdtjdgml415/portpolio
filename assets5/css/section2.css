@@ -154,7 +154,7 @@
 @media (max-width: 600px) {
     .section2__box {
         height: 100vw;
-        margin-bottom: 3vw;
+        margin-bottom: 1vw;
     }
 
     .section2__box__inner .section2__desc {
